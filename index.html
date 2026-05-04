@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Palmito House — Una casa exclusiva entre muntanya, natura i silenci, a pocs minuts de Girona i la Costa Brava."
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Palmito House</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="#hero" class="header__logo">
+          <!-- <span class="header__logo-text">Palmito House</span> -->
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__links">
+            <li><a href="#casa" class="nav__link" data-i18n="nav.house">La casa</a></li>
+            <li><a href="#habitacions" class="nav__link" data-i18n="nav.rooms">Habitacions</a></li>
+            <li><a href="#serveis" class="nav__link" data-i18n="nav.services">Serveis</a></li>
+            <li><a href="#activitats" class="nav__link" data-i18n="nav.activities">Activitats</a></li>
+            <li><a href="#turisme" class="nav__link" data-i18n="nav.attractions">Atraccions</a></li>
+            <li><a href="#comentaris" class="nav__link" data-i18n="nav.reviews">Comentaris</a></li>
+            <li><a href="#contacte" class="nav__link" data-i18n="nav.contact">Contacte</a></li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <button class="lang-btn lang-btn--active" data-lang="ca" aria-label="Català">
+            <span class="lang-switcher__flag lang-switcher__flag--ca"></span>
+          </button>
+          <button class="lang-btn" data-lang="es" aria-label="Español">
+            <span class="lang-switcher__flag lang-switcher__flag--es"></span>
+          </button>
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <span class="lang-switcher__flag lang-switcher__flag--en"></span>
+          </button>
+          <a href="#contacte" class="nav__cta" data-i18n="nav.book">Reservar</a>
+        </div>
+        <button class="nav__toggle" aria-label="Obrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="nav__mobile">
+        <a href="#casa" class="nav__mobile-link" data-i18n="nav.house">La casa</a>
+        <a href="#habitacions" class="nav__mobile-link" data-i18n="nav.rooms">Habitacions</a>
+        <a href="#serveis" class="nav__mobile-link" data-i18n="nav.services">Serveis</a>
+        <a href="#activitats" class="nav__mobile-link" data-i18n="nav.activities">Activitats</a>
+        <a href="#turisme" class="nav__mobile-link" data-i18n="nav.attractions">Atraccions</a>
+        <a href="#comentaris" class="nav__mobile-link" data-i18n="nav.reviews">Comentaris</a>
+        <a href="#contacte" class="nav__mobile-link" data-i18n="nav.contact">Contacte</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero__content">
+          <div class="hero__top">
+            <h1 class="hero__title-palmito">Palmito</h1>
+            <h1 class="hero__title-house">House</h1>
+          </div>
+          <div class="hero__text-block">
+            <p class="hero__tagline" data-i18n="hero.tagline">Escapa't. Respira. Desconnecta de veritat.</p>
+            <p class="hero__desc" data-i18n="hero.description">
+              Una casa exclusiva entre muntanya, natura i silenci, a pocs minuts de Girona i la Costa Brava.
+            </p>
+            <a href="#contacte" class="hero__cta">
+              <span data-i18n="hero.cta_link">Reserva la teva estada</span>
+              <svg class="hero__cta-line" viewBox="0 0 160 6" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,3 Q40,0 80,3 T160,3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-image">
+        <div class="hero-image__wrapper">
+          <img src="img/piscina.avif" alt="Casa Palmito House amb piscina" width="1920" height="1080" />
+        </div>
+      </section>
+
+      <section id="casa" class="section about">
+        <div class="container">
+          <div class="about__header">
+            <span class="section__label" data-i18n="about.label">Sobre la casa</span>
+            <h2 class="section__title section__title--large" data-i18n="about.title">Un refugi privat<br /><em>en plena natura</em></h2>
+          </div>
+          <div class="about__layout">
+            <div class="about__text">
+              <p class="about__lead" data-i18n="about.lead">
+                Situada a Les Planes d'Hostoles, Palmito House està envoltada de paisatge verd, rutes, gorgs i tranquil·litat absoluta.
+              </p>
+            </div>
+            <div class="features-grid">
+              <article class="feature-card">
+                <div class="feature-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M2 4v16" />
+                    <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                    <path d="M2 17h20" />
+                    <path d="M6 8v9" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title" data-i18n="about.feature1.title">4 habitacions dobles</h3>
+                <p class="feature-card__text" data-i18n="about.feature1.text">Per a estades còmodes en grups o famílies</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title" data-i18n="about.feature2.title">Piscina exterior i jardí ampli</h3>
+                <p class="feature-card__text" data-i18n="about.feature2.text">Envoltada de natura i silenci</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title" data-i18n="about.feature3.title">Ubicació privilegiada</h3>
+                <p class="feature-card__text" data-i18n="about.feature3.text">Entre Girona, la Garrotxa i la Costa Brava</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title" data-i18n="about.feature4.title">Casa privada exclusiva</h3>
+                <p class="feature-card__text" data-i18n="about.feature4.text">Per relaxar-se i desconnectar</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-divider">
+        <div class="section-divider__image">
+          <img src="img/piscina2.avif" alt="Piscina i jardí de Palmito House" width="1920" height="600" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="habitacions" class="section rooms">
+        <div class="container">
+          <div class="rooms__header">
+            <span class="section__label" data-i18n="rooms.label">Habitacions</span>
+            <h2 class="section__title section__title--large" data-i18n="rooms.title">Les quatre habitacions dobles<br /><em>per al teu relax</em></h2>
+            <p class="rooms__lead" data-i18n="rooms.lead">Les quatre habitacions dobles et proporcionaran el relax desitjat durant la teva estada.</p>
+          </div>
+          <div class="rooms__grid">
+            <article class="room-card">
+              <div class="room-card__image">
+                <img src="img/habitacio.avif" alt="Habitació doble confortable" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room1.title">Habitació Doble Superior</h3>
+                <p class="room-card__text" data-i18n="rooms.room1.text">
+                  Llit king size, bany privat, vistes al jardí i decoració rústica amb toc modern.
+                </p>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__image">
+                <img src="img/1.jpg" alt="Habitació amb balcó" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room2.title">Habitació amb Balcó</h3>
+                <p class="room-card__text" data-i18n="rooms.room2.text">Balcó privat amb vistes a la muntanya, llit doble i espai de treball.</p>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__image">
+                <img src="img/2.jpg" alt="Suite familiar" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room3.title">Suite Familiar</h3>
+                <p class="room-card__text" data-i18n="rooms.room3.text">
+                  Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="serveis" class="section services section--alt">
+        <div class="container">
+          <div class="services__header">
+            <span class="section__label" data-i18n="services.label">Serveis</span>
+            <h2 class="section__title section__title--large" data-i18n="services.title">Tot el que<br /><em>necessites</em></h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18" />
+                </svg>
+              </div>
+              <h3 class="service-card__title" data-i18n="services.service1.title">WiFi</h3>
+              <p class="service-card__text" data-i18n="services.service1.text">Connexió gratuïta d'alta velocitat.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3 class="service-card__title" data-i18n="services.service5.title">Piscina</h3>
+              <p class="service-card__text" data-i18n="services.service5.text">Privada exterior</p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <h3 class="service-card__title" data-i18n="services.service2.title">Traslados</h3>
+              <p class="service-card__text" data-i18n="services.service2.text">Sota petició</p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <h3 class="service-card__title" data-i18n="services.service4.title">Neteja</h3>
+              <p class="service-card__text" data-i18n="services.service4.text">Sota petició</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="activitats" class="section activities">
+        <div class="container">
+          <div class="activities__header">
+            <span class="section__label" data-i18n="activities.label">Activitats</span>
+            <h2 class="section__title section__title--large" data-i18n="activities.title">Descobreix el que<br /><em>et espera</em></h2>
+          </div>
+          <div class="activities-grid">
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/da9498d45ff7a48e61e24c0d88c01c0a.jpg" alt="Banys al riu" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity1.title">Banys al riu</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/Bike tour.jpg" alt="Sortides en bicicleta" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity2.title">Sortides en bicicleta</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/790855095f570ea1080b1933a6213a37.jpg" alt="Passejos a cavall" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity3.title">Passejos a cavall</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/2a084a87fb473744b4057a538fedc6ae.jpg" alt="Parapent" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity4.title">Parapent</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/12c05acf5b0624d5afcd981aca96bcdb.jpg" alt="Passejos en globus" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity5.title">Passejos en globus</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/b9368f2c51895703ce87bd21aabcd51e.jpg" alt="Esquí" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity6.title">Esquí</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/trekking-in-the-mountain.jpg" alt="Senderisme" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity7.title">Senderisme</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/95cc575d28a9927118aa58f31fb6a5a8.jpg" alt="Golf" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity8.title">Golf</h3>
+            </article>
+            <article class="activity-card">
+              <div class="activity-card__image">
+                <img src="img/96a89195288cbe91c9a3511b5016b092.jpg" alt="Gastronomia" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="activity-card__title" data-i18n="activities.activity9.title">Gastronomia</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="turisme" class="section attractions section--alt">
+        <div class="container">
+          <div class="attractions__header">
+            <span class="section__label" data-i18n="attractions.label">Atraccions turístiques</span>
+            <h2 class="section__title section__title--large" data-i18n="attractions.title">Alrededores<br /><em>per descobrir</em></h2>
+          </div>
+          <div class="attractions-grid">
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/Moli dels Murris.jpg" alt="Alrededores" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title" data-i18n="attractions.attraction1.title">Alrededores</h3>
+            </article>
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/a71259ca023f0895f3bc1797aa08c2c9.jpg" alt="Girona" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title">Girona</h3>
+            </article>
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/figueres.jpg" alt="Figueres" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title">Figueres</h3>
+            </article>
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/vall-nuria.jpg" alt="Pirineos" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title" data-i18n="attractions.attraction4.title">Pirineus</h3>
+            </article>
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/8721f26a7b4944f6167bb113d39f453a.jpg" alt="Costa Brava" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title" data-i18n="attractions.attraction5.title">Costa Brava</h3>
+            </article>
+            <article class="attraction-card">
+              <div class="attraction-card__image">
+                <img src="img/914b6a0ff8da72916e72e17cae3d11df.jpg" alt="Barcelona" width="400" height="300" loading="lazy" />
+              </div>
+              <h3 class="attraction-card__title">Barcelona</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="comentaris" class="section reviews">
+        <div class="container">
+          <div class="reviews__header">
+            <span class="section__label" data-i18n="reviews.label">Comentaris</span>
+            <h2 class="section__title section__title--large" data-i18n="reviews.title">El que diuen<br /><em>els nostres hostes</em></h2>
+          </div>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-card__stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.review1.text">
+                La casa és espaiosa, còmoda, neta i gran, la piscina és fantàstica i la zona de barbacoa és un lloc brillant per cuinar menjar local.
+                Hi ha unes cascades precioses just darrere de la casa, a uns 20 minuts a peu. Vam llogar un cotxe i vam conduir per algunes de les
+                zones fantàstiques d'Espanya, fins a Barcelona per un dia, una vetllada a Girona i una conducció fora d'aquest món cap al nord, a les
+                muntanyes dels Pirineus. Recomanem aquesta casa a qualsevol hoste potencial.
+              </p>
+              <div class="review-card__author">
+                <span class="review-card__name">Teresa + Kevin</span>
+                <span class="review-card__location">Irlanda</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-card__stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.review2.text">
+                Una casa magnífica, espaiosa i neta. Situada al cor de les muntanyes, de cascades, d'antics volcans i a la sortida d'un encantador
+                petit poble, té tot el necessari per agradar. Estada inoblidable.
+              </p>
+              <div class="review-card__author">
+                <span class="review-card__name">Agnès</span>
+                <span class="review-card__location">França</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-card__stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.review3.text">
+                Vam gaudir de les boniques vistes des del jardí del darrere de la casa, mirant cap als turons verds i boscosos. Les piscines i
+                cascades de la zona eren genials per banyar-se, i la piscina de la casa era superb. La zona és interessant i bonica. La casa és un
+                lloc preciós per passar el temps relaxant-se.
+              </p>
+              <div class="review-card__author">
+                <span class="review-card__name">Arvind</span>
+                <span class="review-card__location">Anglaterra</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacte" class="section booking">
+        <div class="container">
+          <div class="booking__layout">
+            <div class="booking__info">
+              <span class="section__label" data-i18n="contact.label">Contacte</span>
+              <h2 class="section__title section__title--large" data-i18n="contact.title">Reserva la teva<br /><em>estada</em></h2>
+              <div class="booking__details">
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.address.title">Adreça</h3>
+                  <p class="booking__detail-text" data-i18n="contact.address.text">
+                    Passeig Rebuscall, 13<br />Les Planes d'Hostoles<br />17172 Girona, Spain
+                  </p>
+                </div>
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.phone.title">Telèfon</h3>
+                  <p class="booking__detail-text"><a href="tel:+34972183206">+34 972 183 206</a></p>
+                </div>
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.email.title">Email</h3>
+                  <p class="booking__detail-text"><a href="mailto:info@palmitohouse.com">info@palmitohouse.com</a></p>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.name">Nom complet</label>
+                <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.name_placeholder" placeholder="El teu nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  data-i18n-placeholder="contact.form.email_placeholder"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dates" data-i18n="contact.form.dates">Dates desitjades</label>
+                <input
+                  type="text"
+                  id="dates"
+                  name="dates"
+                  data-i18n-placeholder="contact.form.dates_placeholder"
+                  placeholder="Ex: 15-20 agost 2026"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Missatge</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  data-i18n-placeholder="contact.form.message_placeholder"
+                  placeholder="Explica'ns què necessites..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Enviar consulta</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <div class="footer__logo">Palmito House</div>
+            <p class="footer__text" data-i18n="footer.text">Una casa exclusiva entre muntanya, natura i silenci.</p>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/palmitohouse" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/palmitohouse/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <a href="#casa" class="footer__link" data-i18n="nav.house">La casa</a>
+            <a href="#habitacions" class="footer__link" data-i18n="nav.rooms">Habitacions</a>
+            <a href="#serveis" class="footer__link" data-i18n="nav.services">Serveis</a>
+            <a href="#activitats" class="footer__link" data-i18n="nav.activities">Activitats</a>
+            <a href="#turisme" class="footer__link" data-i18n="nav.attractions">Atraccions</a>
+            <a href="#comentaris" class="footer__link" data-i18n="nav.reviews">Comentaris</a>
+            <a href="#contacte" class="footer__link" data-i18n="nav.contact">Contacte</a>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Palmito House. Tots els drets reservats.</p>
+          <p class="footer__copy" data-i18n="footer.design">Dissenyat per Vora Studio</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
