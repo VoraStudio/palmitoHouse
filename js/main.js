@@ -1,3 +1,25 @@
+// Initialize Lenis
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  direction: 'vertical',
+  gestureDirection: 'vertical',
+  smooth: true,
+  mouseMultiplier: 1,
+  smoothTouch: false,
+  touchMultiplier: 2,
+  infinite: false,
+});
+
+// Sync Lenis with ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
+
 const i18n = {
   ca: {
     'nav.house': 'La casa',
@@ -8,12 +30,12 @@ const i18n = {
     'nav.reviews': 'Comentaris',
     'nav.contact': 'Contacte',
     'nav.book': 'Reservar',
-    'hero.label': 'Casa rural exclusiva',
-    'hero.description': 'Escapa\'t. Respira. Desconnecta de veritat. Una casa exclusiva entre muntanya, natura i silenci, a pocs minuts de Girona i la Costa Brava.',
-    'hero.cta_link': 'Reserva la teva estada',
+    'hero.label': 'Refugi Rural Exclusiu',
+    'hero.description': 'Més que una estada, una immersió total en la calma. Gaudeix de la màxima exclusivitat en un entorn on el temps es deté i el servei personalitzat és la nostra prioritat.',
+    'hero.cta_link': 'Comença el teu viatge',
     'about.label': 'Sobre la casa',
     'about.title': 'Un refugi privat<br /><em>en plena natura</em>',
-    'about.lead': 'Situada a Les Planes d\'Hostoles, Palmito House està envoltada de paisatge verd, rutes, gorgs i tranquil·litat absoluta.',
+    'about.lead': 'Situada estratègicament a Les Planes d\'Hostoles, Palmito House és un santuari on la natura es fusiona amb el confort. Ens dediquem a oferir una experiència de servei integral, des de la gastronomia local fins a rutes personalitzades, garantint que cada detall de la teva estada sigui perfecte.',
     'about.feature1.title': '4 habitacions dobles',
     'about.feature1.text': 'Per a estades còmodes en grups o famílies',
     'about.feature2.title': 'Piscina exterior i jardí ampli',
@@ -24,15 +46,16 @@ const i18n = {
     'about.feature4.text': 'Per relaxar-se i desconnectar',
     'rooms.label': 'Habitacions',
     'rooms.title': 'Les quatre habitacions dobles<br /><em>per al teu relax</em>',
-    'rooms.lead': 'Les quatre habitacions dobles et proporcionaran el relax desitjat durant la teva estada.',
+    'rooms.lead': 'Cada una de les nostres quatre habitacions dobles ha estat dissenyada per ser un refugi de pau, combinant materials naturals amb tecnologia discreta per al teu màxim confort.',
     'rooms.room1.title': 'Habitació Doble Superior',
     'rooms.room1.text': 'Llit king size, bany privat, vistes al jardí i decoració rústica amb toc modern.',
     'rooms.room2.title': 'Habitació amb Balcó',
     'rooms.room2.text': 'Balcó privat amb vistes a la muntanya, llit doble i espai de treball.',
     'rooms.room3.title': 'Suite Familiar',
     'rooms.room3.text': 'Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.',
-    'services.label': 'Serveis',
-    'services.title': 'Tot el que<br /><em>necessites</em>',
+    'services.label': 'Experiència Palmito',
+    'services.title': 'Tot el que<br /><em>necessites per brillar</em>',
+    'services.lead': 'El nostre objectiu és que no hagis de pensar en res més que en gaudir. Oferim una gamma de serveis exclusius dissenyats per fer la teva estada el més relaxada possible.',
     'services.service1.title': 'WiFi',
     'services.service1.text': 'Connexió gratuïta d\'alta velocitat.',
     'services.service2.title': 'Traslados',
@@ -41,8 +64,9 @@ const i18n = {
     'services.service4.text': 'Sota petició',
     'services.service5.title': 'Piscina',
     'services.service5.text': 'Privada exterior',
-    'activities.label': 'Activitats',
-    'activities.title': 'Descobreix el que<br /><em>et espera</em>',
+    'activities.label': 'Explora l\'Entorn',
+    'activities.title': 'Descobreix el que<br /><em>la Garrotxa té per a tu</em>',
+    'activities.lead': 'Des de l\'adrenalina del parapent fins a la calma dels banys al riu, seleccionem les millors experiències perquè connectis amb la terra i amb tu mateix.',
     'activities.activity1.title': 'Banys al riu',
     'activities.activity2.title': 'Sortides en bicicleta',
     'activities.activity3.title': 'Passejos a cavall',
@@ -62,8 +86,9 @@ const i18n = {
     'reviews.review1.text': 'La casa és espaiosa, còmoda, neta i gran, la piscina és fantàstica i la zona de barbacoa és un lloc brillant per cuinar menjar local. Hi ha unes cascades precioses just darrere de la casa, a uns 20 minuts a peu. Vam llogar un cotxe i vam conduir per algunes de les zones fantàstiques d\'Espanya, fins a Barcelona per un dia, una vetllada a Girona i una conducció fora d\'aquest món cap al nord, a les muntanyes dels Pirineus. Recomanem aquesta casa a qualsevol hoste potencial.',
     'reviews.review2.text': 'Una casa magnífica, espaiosa i neta. Situada al cor de les muntanyes, de cascades, d\'antics volcans i a la sortida d\'un encantador petit poble, té tot el necessari per agradar. Estada inoblidable.',
     'reviews.review3.text': 'Vam gaudir de les boniques vistes des del jardí del darrere de la casa, mirant cap als turons verds i boscosos. Les piscines i cascades de la zona eren genials per banyar-se, i la piscina de la casa era superb. La zona és interessant i bonica. La casa és un lloc preciós per passar el temps relaxant-se.',
-    'contact.label': 'Contacte',
-    'contact.title': 'Reserva la teva<br /><em>estada</em>',
+    'contact.label': 'Fes el primer pas',
+    'contact.title': 'Reserva la teva<br /><em>experiència</em>',
+    'contact.lead': 'Estem aquí per ajudar-te a planificar la teva escapada ideal. Contacta amb nosaltres per a una atenció totalment personalitzada i detalls exclusius.',
     'contact.address.title': 'Adreça',
     'contact.address.text': 'Passeig Rebuscall, 13<br />Les Planes d\'Hostoles<br />17172 Girona, Spain',
     'contact.phone.title': 'Telèfon',
@@ -77,7 +102,7 @@ const i18n = {
     'contact.form.message': 'Missatge',
     'contact.form.message_placeholder': 'Explica\'ns què necessites...',
     'contact.form.submit': 'Enviar consulta',
-    'footer.text': 'Una casa exclusiva entre muntanya, natura i silenci.',
+    'footer.text': 'On l\'exclusivitat troba la seva essència natural. La teva llar lluny de casa, al cor de la Garrotxa.',
     'footer.copy': '© 2026 Palmito House. Tots els drets reservats.',
     'footer.design': 'Dissenyat per Vora Studio'
   },
@@ -113,8 +138,9 @@ const i18n = {
     'rooms.room2.text': 'Balcón privado con vistas a la montaña, cama doble y espacio de trabajo.',
     'rooms.room3.title': 'Suite Familiar',
     'rooms.room3.text': 'Dos ambientes conectados, ideal para familias con niños. Capacidad para 4 personas.',
-    'services.label': 'Servicios',
-    'services.title': 'Todo lo que<br /><em>necesitas</em>',
+    'services.label': 'Experiencia Palmito',
+    'services.title': 'Todo lo que<br /><em>necesitas para brillar</em>',
+    'services.lead': 'Nuestro objetivo es que no tengas que pensar en nada más que en disfrutar. Ofrecemos una gama de servicios exclusivos diseñados para hacer tu estancia lo más relajada posible.',
     'services.service1.title': 'WiFi',
     'services.service1.text': 'Conexión gratuita de alta velocidad.',
     'services.service2.title': 'Traslados',
@@ -123,8 +149,9 @@ const i18n = {
     'services.service4.text': 'Bajo petición',
     'services.service5.title': 'Piscina',
     'services.service5.text': 'Privada exterior',
-    'activities.label': 'Actividades',
-    'activities.title': 'Descubre lo que<br /><em>te espera</em>',
+    'activities.label': 'Explora el Entorno',
+    'activities.title': 'Descubre lo que<br /><em>la Garrotxa tiene para ti</em>',
+    'activities.lead': 'Desde la adrenalina del paracaidismo hasta la calma de los baños en el río, seleccionamos las mejores experiencias para que conectes con la tierra y contigo mismo.',
     'activities.activity1.title': 'Baños en el río',
     'activities.activity2.title': 'Salidas en bicicleta',
     'activities.activity3.title': 'Paseos a caballo',
@@ -144,8 +171,9 @@ const i18n = {
     'reviews.review1.text': 'La casa es amplia, cómoda, limpia y grande, la piscina es fantástica y la zona de barbacoa es un lugar brillante para cocinar comida local. Hay unas cascadas preciosas justo detrás de la casa, a unos 20 minutos a pie. Tuvimos un coche de alquiler y condujimos por algunas de las zonas fantásticas de España, hasta Barcelona por un día, una velada en Girona y una conducción fuera de este mundo hacia el norte, a las montañas de los Pirineos. Recomendamos esta casa a cualquier huésped potencial.',
     'reviews.review2.text': 'Una casa magnífica, espaciosa y limpia. Situada en el corazón de las montañas, de cascadas, de antiguos volcanes y a la salida de un encantador pequeño pueblo, tiene todo lo necesario para gustar. Estancia inolvidable.',
     'reviews.review3.text': 'Disfrutamos de las hermosas vistas desde el jardín trasero de la casa, mirando hacia las colinas verdes y boscosas. Las piscinas y cascadas de la zona eran geniales para bañarse, y la piscina de la casa era superb. La zona es interesante y bonita. La casa es un lugar precioso para pasar el tiempo relajándose.',
-    'contact.label': 'Contacto',
-    'contact.title': 'Reserva tu<br /><em>estancia</em>',
+    'contact.label': 'Da el primer paso',
+    'contact.title': 'Reserva tu<br /><em>experiencia</em>',
+    'contact.lead': 'Estamos aquí para ayudarte a planificar tu escapada ideal. Contacta con nosotros para una atención totalmente personalizada y detalles exclusivos.',
     'contact.address.title': 'Dirección',
     'contact.address.text': 'Passeig Rebuscall, 13<br />Les Planes d\'Hostoles<br />17172 Girona, Spain',
     'contact.phone.title': 'Teléfono',
@@ -159,7 +187,7 @@ const i18n = {
     'contact.form.message': 'Mensaje',
     'contact.form.message_placeholder': 'Cuéntanos qué necesitas...',
     'contact.form.submit': 'Enviar consulta',
-    'footer.text': 'Una casa exclusiva entre montaña, naturaleza y silencio.',
+    'footer.text': 'Donde la exclusividad encuentra su esencia natural. Tu hogar lejos de casa, en el corazón de la Garrotxa.',
     'footer.copy': '© 2026 Palmito House. Todos los derechos reservados.',
     'footer.design': 'Diseñado por Vora Studio'
   },
@@ -172,12 +200,12 @@ const i18n = {
     'nav.reviews': 'Reviews',
     'nav.contact': 'Contact',
     'nav.book': 'Book now',
-    'hero.label': 'Exclusive rural house',
-    'hero.description': 'Escape. Breathe. Truly disconnect. An exclusive house between mountains, nature and silence, minutes away from Girona and the Costa Brava.',
-    'hero.cta_link': 'Book your stay',
+    'hero.label': 'Exclusive Rural Retreat',
+    'hero.description': 'More than a stay, a total immersion in calm. Enjoy the ultimate exclusivity in an environment where time stops and personalized service is our priority.',
+    'hero.cta_link': 'Start your journey',
     'about.label': 'About the house',
     'about.title': 'A private retreat<br /><em>in the heart of nature</em>',
-    'about.lead': 'Located in Les Planes d\'Hostoles, Palmito House is surrounded by green landscape, routes, gorges and absolute tranquility.',
+    'about.lead': 'Strategically located in Les Planes d\'Hostoles, Palmito House is a sanctuary where nature merges with comfort. We are dedicated to offering an integral service experience, from local gastronomy to personalized routes, ensuring that every detail of your stay is perfect.',
     'about.feature1.title': '4 double rooms',
     'about.feature1.text': 'For comfortable stays in groups or families',
     'about.feature2.title': 'Outdoor pool & large garden',
@@ -188,15 +216,16 @@ const i18n = {
     'about.feature4.text': 'To relax and disconnect',
     'rooms.label': 'Rooms',
     'rooms.title': 'Four double rooms<br /><em>for your relaxation</em>',
-    'rooms.lead': 'The four double rooms will provide you with the relaxation you desire during your stay.',
+    'rooms.lead': 'Each of our four double rooms has been designed to be a refuge of peace, combining natural materials with discrete technology for your maximum comfort.',
     'rooms.room1.title': 'Superior Double Room',
     'rooms.room1.text': 'King size bed, private bathroom, garden views and rustic decor with a modern touch.',
     'rooms.room2.title': 'Room with Balcony',
     'rooms.room2.text': 'Private balcony with mountain views, double bed and workspace.',
     'rooms.room3.title': 'Family Suite',
     'rooms.room3.text': 'Two connected spaces, ideal for families with children. Capacity for 4 people.',
-    'services.label': 'Services',
-    'services.title': 'Everything<br /><em>you need</em>',
+    'services.label': 'The Palmito Experience',
+    'services.title': 'Everything you<br /><em>need to shine</em>',
+    'services.lead': 'Our goal is for you not to have to think about anything but enjoying yourself. We offer a range of exclusive services designed to make your stay as relaxed as possible.',
     'services.service1.title': 'WiFi',
     'services.service1.text': 'Free high-speed connection.',
     'services.service2.title': 'Transfers',
@@ -205,8 +234,9 @@ const i18n = {
     'services.service4.text': 'On request',
     'services.service5.title': 'Pool',
     'services.service5.text': 'Private outdoor',
-    'activities.label': 'Activities',
-    'activities.title': 'Discover what<br /><em>awaits you</em>',
+    'activities.label': 'Explore the Area',
+    'activities.title': 'Discover what<br /><em>Garrotxa has for you</em>',
+    'activities.lead': 'From the adrenaline of paragliding to the calm of river bathing, we select the best experiences for you to connect with the land and yourself.',
     'activities.activity1.title': 'River bathing',
     'activities.activity2.title': 'Bike tours',
     'activities.activity3.title': 'Horse riding',
@@ -226,8 +256,9 @@ const i18n = {
     'reviews.review1.text': 'The house is roomy, comfortable, clean and big, the pool is fantastic, and the BBQ area is a brilliant place to cook local food. There are some gorgeous waterfalls just behind the house, about a 20 minute walk away. We had a hire car and drove around some of the fantastic areas of Spain, into Barcelona for a day, an evening in Girona and an out of this world drive north to the Pyrenees\'s mountains. We would recommend this house to any potential guest.',
     'reviews.review2.text': 'A magnificent, spacious and clean house. Located in the heart of the mountains, of waterfalls, of ancient volcanoes and at the exit of a charming little village, it has everything to please. Unforgettable stay.',
     'reviews.review3.text': 'We enjoyed the beautiful views from the garden at the back of the house, looking towards green forested hills. The pools and waterfalls in the area were great for swimming, and the swimming pool at the house was superb. The area is interesting and beautiful. The house is a gorgeous place to spend time relaxing.',
-    'contact.label': 'Contact',
-    'contact.title': 'Book your<br /><em>stay</em>',
+    'contact.label': 'Take the first step',
+    'contact.title': 'Book your<br /><em>experience</em>',
+    'contact.lead': 'We are here to help you plan your ideal getaway. Contact us for fully personalized attention and exclusive details.',
     'contact.address.title': 'Address',
     'contact.address.text': 'Passeig Rebuscall, 13<br />Les Planes d\'Hostoles<br />17172 Girona, Spain',
     'contact.phone.title': 'Phone',
@@ -241,7 +272,7 @@ const i18n = {
     'contact.form.message': 'Message',
     'contact.form.message_placeholder': 'Tell us what you need...',
     'contact.form.submit': 'Send inquiry',
-    'footer.text': 'An exclusive house between mountains, nature and silence.',
+    'footer.text': 'Where exclusivity meets its natural essence. Your home away from home, in the heart of Garrotxa.',
     'footer.copy': '© 2026 Palmito House. All rights reserved.',
     'footer.design': 'Designed by Vora Studio'
   }
@@ -298,31 +329,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   });
 });
 
-function setLanguage(lang) {
-  currentLang = lang;
-  document.documentElement.lang = lang;
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (i18n[lang] && i18n[lang][key]) {
-      el.innerHTML = i18n[lang][key];
-    }
-  });
-
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    if (i18n[lang] && i18n[lang][key]) {
-      el.placeholder = i18n[lang][key];
-    }
-  });
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('lang-btn--active', btn.getAttribute('data-lang') === lang);
-  });
-
-  localStorage.setItem('palmito-lang', lang);
-}
-
 const savedLang = localStorage.getItem('palmito-lang');
 if (savedLang && i18n[savedLang]) {
   setLanguage(savedLang);
@@ -341,10 +347,23 @@ navToggle.addEventListener('click', () => {
 });
 
 mobileLinks.forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = link.getAttribute('href');
+    lenis.scrollTo(target);
     navMobile.classList.remove('nav__mobile--open');
     navToggle.classList.remove('nav__toggle--active');
     navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = this.getAttribute('href');
+    if (target && target !== '#') {
+      lenis.scrollTo(target);
+    }
   });
 });
 
@@ -382,7 +401,8 @@ gsap.defaults({ ease: 'power3.out' });
 const heroTL = gsap.timeline({ delay: 0.2 });
 
 heroTL
-  .from('.hero__title-palmito', { autoAlpha: 0, y: 60, duration: 0.8 })
+  .from('.hero__label', { autoAlpha: 0, y: 30, duration: 0.7 })
+  .from('.hero__title-palmito', { autoAlpha: 0, y: 60, duration: 0.8 }, '-=0.4')
   .from('.hero__title-house', { autoAlpha: 0, y: 60, duration: 0.8 }, '-=0.5')
   .from('.hero__text-block', { autoAlpha: 0, y: 40, duration: 0.7 }, '-=0.4')
   .from('.hero__cta', { autoAlpha: 0, y: 20, duration: 0.6 }, '-=0.5')
