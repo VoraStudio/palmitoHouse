@@ -35,7 +35,8 @@ const i18n = {
     'hero.cta_link': 'Comença el teu viatge',
     'about.label': 'Sobre la casa',
     'about.title': 'Un refugi privat<br /><em>en plena natura</em>',
-    'about.lead': 'Situada estratègicament a Les Planes d\'Hostoles, Palmito House és un santuari on la natura es fusiona amb el confort. Ens dediquem a oferir una experiència de servei integral, des de la gastronomia local fins a rutes personalitzades, garantint que cada detall de la teva estada sigui perfecte.',
+    'about.lead': 'Palmito House es troba a Les Planes d\'Hostoles, un tranquil poble de muntanya prop de Girona. A prop dels Pirineus i a prop de Barcelona i les platges de la Costa Brava, és el lloc perfecte per relaxar-se i gaudir de la bellesa dels seus voltants.',
+    'about.lead2': 'Pot allotjar 8 persones en 4 habitacions dobles i disposa d\'un gran jardí i una espectacular piscina. Un espai pensat per desconnectar i gaudir dels paisatges i atractius turístics dels voltants.',
     'about.feature1.title': '4 habitacions dobles',
     'about.feature1.text': 'Per a estades còmodes en grups o famílies',
     'about.feature2.title': 'Piscina exterior i jardí ampli',
@@ -44,26 +45,36 @@ const i18n = {
     'about.feature3.text': 'Entre Girona, la Garrotxa i la Costa Brava',
     'about.feature4.title': 'Casa privada exclusiva',
     'about.feature4.text': 'Per relaxar-se i desconnectar',
+    'stats.rooms': 'Habitacions dobles',
+    'stats.experience': 'Anys d\'experiència',
+    'stats.guests': 'Hostes feliços',
+    'stats.rating': 'Valoració mitjana',
     'rooms.label': 'Habitacions',
     'rooms.title': 'Les quatre habitacions dobles<br /><em>per al teu relax</em>',
-    'rooms.lead': 'Cada una de les nostres quatre habitacions dobles ha estat dissenyada per ser un refugi de pau, combinant materials naturals amb tecnologia discreta per al teu màxim confort.',
+    'rooms.lead': 'Les quatre habitacions dobles us proporcionaran el relax desitjat durant la vostra estada.',
     'rooms.room1.title': 'Habitació Doble Superior',
     'rooms.room1.text': 'Llit king size, bany privat, vistes al jardí i decoració rústica amb toc modern.',
     'rooms.room2.title': 'Habitació amb Balcó',
     'rooms.room2.text': 'Balcó privat amb vistes a la muntanya, llit doble i espai de treball.',
     'rooms.room3.title': 'Suite Familiar',
     'rooms.room3.text': 'Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.',
+    'rooms.room4.title': 'Habitació Garden View',
+    'rooms.room4.text': 'Accés directe al jardí, llit doble i una atmosfera de calma absoluta.',
     'services.label': 'Experiència Palmito',
     'services.title': 'Tot el que<br /><em>necessites per brillar</em>',
     'services.lead': 'El nostre objectiu és que no hagis de pensar en res més que en gaudir. Oferim una gamma de serveis exclusius dissenyats per fer la teva estada el més relaxada possible.',
     'services.service1.title': 'WiFi',
-    'services.service1.text': 'Connexió gratuïta d\'alta velocitat.',
-    'services.service2.title': 'Traslados',
+    'services.service1.text': 'Connexió d\'alta velocitat a tota la finca',
+    'services.service2.title': 'Trasllats',
     'services.service2.text': 'Sota petició',
-    'services.service4.title': 'Neteja',
+    'services.service4.title': 'Limpieza',
     'services.service4.text': 'Sota petició',
     'services.service5.title': 'Piscina',
-    'services.service5.text': 'Privada exterior',
+    'services.service5.text': 'Piscina privada exterior',
+    'services.service6.title': 'Jardí',
+    'services.service6.text': 'Ampli jardí amb vistes a la muntanya',
+    'services.service7.title': 'Servicio de comidas',
+    'services.service7.text': 'Sota petició',
     'activities.label': 'Explora l\'Entorn',
     'activities.title': 'Descobreix el que<br /><em>la Garrotxa té per a tu</em>',
     'activities.lead': 'Des de l\'adrenalina del parapent fins a la calma dels banys al riu, seleccionem les millors experiències perquè connectis amb la terra i amb tu mateix.',
@@ -120,7 +131,8 @@ const i18n = {
     'hero.cta_link': 'Reserva tu estancia',
     'about.label': 'Sobre la casa',
     'about.title': 'Un refugio privado<br /><em>en plena naturaleza</em>',
-    'about.lead': 'Situada en Les Planes d\'Hostoles, Palmito House está rodeada de paisaje verde, rutas, pozas y tranquilidad absoluta.',
+    'about.lead': 'Palmito House está situada en Les Planes d\'Hostoles, un tranquilo pueblo de montaña cerca de Girona. Cerca de los Pirineos y próximo a Barcelona y las playas de la Costa Brava, es el lugar perfecto para relajarse y disfrutar de la belleza de sus alrededores.',
+    'about.lead2': 'Puede alojar 8 personas en 4 habitaciones dobles y tiene un gran jardín y una espectacular piscina. Un espacio pensado para desconectar y disfrutar de los paisajes y atractivos turísticos cercanos.',
     'about.feature1.title': '4 habitaciones dobles',
     'about.feature1.text': 'Para estancias cómodas en grupos o familias',
     'about.feature2.title': 'Piscina exterior y jardín amplio',
@@ -129,26 +141,36 @@ const i18n = {
     'about.feature3.text': 'Entre Girona, la Garrotxa y la Costa Brava',
     'about.feature4.title': 'Casa privada exclusiva',
     'about.feature4.text': 'Para relajarse y desconectar',
+    'stats.rooms': 'Habitaciones dobles',
+    'stats.experience': 'Años de experiencia',
+    'stats.guests': 'Huéspedes felices',
+    'stats.rating': 'Valoración media',
     'rooms.label': 'Habitaciones',
     'rooms.title': 'Las cuatro habitaciones dobles<br /><em>para tu relax</em>',
-    'rooms.lead': 'Las cuatro habitaciones dobles te proporcionarán el relax deseado durante tu estancia.',
+    'rooms.lead': 'Las cuatro habitaciones dobles le proporcionarán el relax deseado durante su estancia.',
     'rooms.room1.title': 'Habitación Doble Superior',
     'rooms.room1.text': 'Cama king size, baño privado, vistas al jardín y decoración rústica con toque moderno.',
     'rooms.room2.title': 'Habitación con Balcón',
     'rooms.room2.text': 'Balcón privado con vistas a la montaña, cama doble y espacio de trabajo.',
     'rooms.room3.title': 'Suite Familiar',
     'rooms.room3.text': 'Dos ambientes conectados, ideal para familias con niños. Capacidad para 4 personas.',
+    'rooms.room4.title': 'Habitación Garden View',
+    'rooms.room4.text': 'Acceso directo al jardín, cama doble y una atmósfera de calma absoluta.',
     'services.label': 'Experiencia Palmito',
     'services.title': 'Todo lo que<br /><em>necesitas para brillar</em>',
     'services.lead': 'Nuestro objetivo es que no tengas que pensar en nada más que en disfrutar. Ofrecemos una gama de servicios exclusivos diseñados para hacer tu estancia lo más relajada posible.',
     'services.service1.title': 'WiFi',
-    'services.service1.text': 'Conexión gratuita de alta velocidad.',
+    'services.service1.text': 'Conexión de alta velocidad en toda la finca',
     'services.service2.title': 'Traslados',
     'services.service2.text': 'Bajo petición',
     'services.service4.title': 'Limpieza',
     'services.service4.text': 'Bajo petición',
     'services.service5.title': 'Piscina',
-    'services.service5.text': 'Privada exterior',
+    'services.service5.text': 'Piscina privada exterior',
+    'services.service6.title': 'Jardín',
+    'services.service6.text': 'Amplio jardín con vistas a la montaña',
+    'services.service7.title': 'Servicio de comidas',
+    'services.service7.text': 'Bajo petición',
     'activities.label': 'Explora el Entorno',
     'activities.title': 'Descubre lo que<br /><em>la Garrotxa tiene para ti</em>',
     'activities.lead': 'Desde la adrenalina del paracaidismo hasta la calma de los baños en el río, seleccionamos las mejores experiencias para que conectes con la tierra y contigo mismo.',
@@ -205,7 +227,8 @@ const i18n = {
     'hero.cta_link': 'Start your journey',
     'about.label': 'About the house',
     'about.title': 'A private retreat<br /><em>in the heart of nature</em>',
-    'about.lead': 'Strategically located in Les Planes d\'Hostoles, Palmito House is a sanctuary where nature merges with comfort. We are dedicated to offering an integral service experience, from local gastronomy to personalized routes, ensuring that every detail of your stay is perfect.',
+    'about.lead': 'Palmito House is located in Les Planes d\'Hostoles, a quiet mountain village near Girona. Close to the Pyrenees and near Barcelona and the beaches of the Costa Brava, it\'s the perfect place to relax and enjoy the beauty of its surroundings.',
+    'about.lead2': 'It sleeps 8 people in 4 double rooms and has a large garden and a spectacular pool. A space designed to disconnect and enjoy the landscapes and nearby tourist attractions.',
     'about.feature1.title': '4 double rooms',
     'about.feature1.text': 'For comfortable stays in groups or families',
     'about.feature2.title': 'Outdoor pool & large garden',
@@ -214,26 +237,36 @@ const i18n = {
     'about.feature3.text': 'Between Girona, Garrotxa and Costa Brava',
     'about.feature4.title': 'Exclusive private house',
     'about.feature4.text': 'To relax and disconnect',
+    'stats.rooms': 'Double rooms',
+    'stats.experience': 'Years of experience',
+    'stats.guests': 'Happy guests',
+    'stats.rating': 'Average rating',
     'rooms.label': 'Rooms',
     'rooms.title': 'Four double rooms<br /><em>for your relaxation</em>',
-    'rooms.lead': 'Each of our four double rooms has been designed to be a refuge of peace, combining natural materials with discrete technology for your maximum comfort.',
+    'rooms.lead': 'The four double rooms will provide you with the desired relaxation during your stay.',
     'rooms.room1.title': 'Superior Double Room',
     'rooms.room1.text': 'King size bed, private bathroom, garden views and rustic decor with a modern touch.',
     'rooms.room2.title': 'Room with Balcony',
     'rooms.room2.text': 'Private balcony with mountain views, double bed and workspace.',
     'rooms.room3.title': 'Family Suite',
     'rooms.room3.text': 'Two connected spaces, ideal for families with children. Capacity for 4 people.',
+    'rooms.room4.title': 'Garden View Room',
+    'rooms.room4.text': 'Direct garden access, double bed and an atmosphere of absolute calm.',
     'services.label': 'The Palmito Experience',
     'services.title': 'Everything you<br /><em>need to shine</em>',
     'services.lead': 'Our goal is for you not to have to think about anything but enjoying yourself. We offer a range of exclusive services designed to make your stay as relaxed as possible.',
     'services.service1.title': 'WiFi',
-    'services.service1.text': 'Free high-speed connection.',
+    'services.service1.text': 'High-speed connection throughout the property',
     'services.service2.title': 'Transfers',
     'services.service2.text': 'On request',
     'services.service4.title': 'Cleaning',
     'services.service4.text': 'On request',
     'services.service5.title': 'Pool',
-    'services.service5.text': 'Private outdoor',
+    'services.service5.text': 'Private outdoor pool',
+    'services.service6.title': 'Garden',
+    'services.service6.text': 'Large garden with mountain views',
+    'services.service7.title': 'Meal service',
+    'services.service7.text': 'On request',
     'activities.label': 'Explore the Area',
     'activities.title': 'Discover what<br /><em>Garrotxa has for you</em>',
     'activities.lead': 'From the adrenaline of paragliding to the calm of river bathing, we select the best experiences for you to connect with the land and yourself.',
@@ -320,6 +353,11 @@ function setLanguage(lang) {
     btn.classList.toggle('lang-btn--active', btn.getAttribute('data-lang') === lang);
   });
 
+  const currentFlagEl = document.getElementById('current-flag');
+  if (currentFlagEl) {
+    currentFlagEl.className = `lang-switcher__flag lang-switcher__flag--${lang}`;
+  }
+
   localStorage.setItem('palmito-lang', lang);
 }
 
@@ -340,10 +378,73 @@ const navToggle = document.querySelector('.nav__toggle');
 const navMobile = document.querySelector('.nav__mobile');
 const mobileLinks = document.querySelectorAll('.nav__mobile-link');
 
+function getFocusableElements(container) {
+  return container.querySelectorAll(
+    'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  );
+}
+
+function trapFocus(container) {
+  const focusable = getFocusableElements(container);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  first.focus();
+
+  function handler(e) {
+    if (e.key !== 'Tab') return;
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else {
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }
+
+  container.addEventListener('keydown', handler);
+  return () => container.removeEventListener('keydown', handler);
+}
+
+let releaseTrap = null;
+
+function openMobileMenu() {
+  navMobile.classList.add('nav__mobile--open');
+  navToggle.classList.add('nav__toggle--active');
+  navToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+  releaseTrap = trapFocus(navMobile);
+}
+
+function closeMobileMenu() {
+  navMobile.classList.remove('nav__mobile--open');
+  navToggle.classList.remove('nav__toggle--active');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+  if (releaseTrap) {
+    releaseTrap();
+    releaseTrap = null;
+  }
+  navToggle.focus();
+}
+
 navToggle.addEventListener('click', () => {
-  const isOpen = navMobile.classList.toggle('nav__mobile--open');
-  navToggle.classList.toggle('nav__toggle--active');
-  navToggle.setAttribute('aria-expanded', isOpen);
+  const isOpen = navMobile.classList.contains('nav__mobile--open');
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && navMobile.classList.contains('nav__mobile--open')) {
+    closeMobileMenu();
+  }
 });
 
 mobileLinks.forEach(link => {
@@ -351,9 +452,7 @@ mobileLinks.forEach(link => {
     e.preventDefault();
     const target = link.getAttribute('href');
     lenis.scrollTo(target);
-    navMobile.classList.remove('nav__mobile--open');
-    navToggle.classList.remove('nav__toggle--active');
-    navToggle.setAttribute('aria-expanded', 'false');
+    closeMobileMenu();
   });
 });
 
@@ -398,27 +497,49 @@ function updateActiveLink(id) {
 
 gsap.defaults({ ease: 'power3.out' });
 
-const heroTL = gsap.timeline({ delay: 0.2 });
+// Header entrance animation
+gsap.set('.header', { autoAlpha: 0 });
+
+const headerTL = gsap.timeline({ delay: 0.05 });
+headerTL
+  .to('.header', { autoAlpha: 1, duration: 0.3, ease: 'power2.out' })
+  .from('.header__logo', { y: -24, autoAlpha: 0, duration: 0.6, ease: 'power3.out' }, '-=0.1')
+  .from('.nav__link', { y: -20, autoAlpha: 0, stagger: 0.06, duration: 0.5, ease: 'power3.out' }, '-=0.35')
+  .from('.lang-btn, .nav__cta, .nav__toggle', { y: -20, autoAlpha: 0, stagger: 0.06, duration: 0.5, ease: 'power3.out' }, '-=0.3');
+
+const heroTL = gsap.timeline({ delay: 0.15 });
 
 heroTL
-  .from('.hero__label', { autoAlpha: 0, y: 30, duration: 0.7 })
-  .from('.hero__title-palmito', { autoAlpha: 0, y: 60, duration: 0.8 }, '-=0.4')
-  .from('.hero__title-house', { autoAlpha: 0, y: 60, duration: 0.8 }, '-=0.5')
-  .from('.hero__text-block', { autoAlpha: 0, y: 40, duration: 0.7 }, '-=0.4')
-  .from('.hero__cta', { autoAlpha: 0, y: 20, duration: 0.6 }, '-=0.5')
-  .to('.hero__cta-line', {
-    opacity: 1,
-    duration: 0.01
-  }, '-=0.3')
-  .fromTo('.hero__cta-line path', {
-    strokeDasharray: 180,
-    strokeDashoffset: 180
-  }, {
-    strokeDashoffset: 0,
-    duration: 1.2,
-    ease: 'power2.inOut'
-  }, '-=0.25')
-  .from('.hero-image__wrapper', { autoAlpha: 0, y: 60, duration: 1 }, '-=0.6');
+  .from('.hero__word--palmito', { x: '-50vw', duration: 1.5, ease: 'power4.out' }, 0)
+  .from('.hero__word--house', { x: '50vw', duration: 1.5, ease: 'power4.out' }, 0)
+  .fromTo('.hero__inline-image', 
+    { clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' },
+    { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', duration: 1, ease: 'power3.out' },
+    0.8
+  )
+  .to('.hero__inline-image', {
+    width: '120vw', // Obligamos a que sea más de 100vw para cubrir la diferencia de texto
+    height: '70vh',
+    borderRadius: 0, // Quitamos el borde redondeado para que sea de borde a borde
+    duration: 2,
+    ease: 'power3.inOut'
+  }, '+=2')
+  .to('.hero__word--palmito', {
+    x: '42vw', // Mueve hacia el centro sobre la imagen
+    y: '-28vh', // Mueve a la parte superior de la imagen
+    scale: 0.5,
+    color: '#ffffff', // Pasa a blanco
+    duration: 2,
+    ease: 'power3.inOut'
+  }, '<')
+  .to('.hero__word--house', {
+    x: '-42vw', // Mueve hacia el centro sobre la imagen
+    y: '-28vh', // Mueve a la parte superior de la imagen
+    scale: 0.5,
+    color: '#ffffff', // Pasa a blanco
+    duration: 2,
+    ease: 'power3.inOut'
+  }, '<');
 
 gsap.utils.toArray('.section__label').forEach(el => {
   gsap.from(el, {
@@ -452,14 +573,13 @@ ScrollTrigger.batch('.feature-card', {
   onEnter: (elements) => {
     gsap.from(elements, {
       autoAlpha: 0,
-      y: 40,
-      stagger: 0.1,
+      y: 30,
       duration: 0.7,
       overwrite: true
     });
   },
   onLeaveBack: (elements) => {
-    gsap.set(elements, { autoAlpha: 0, y: 40, overwrite: true });
+    gsap.set(elements, { autoAlpha: 0, y: 30, overwrite: true });
   },
   start: 'top 85%',
   once: true
@@ -467,18 +587,17 @@ ScrollTrigger.batch('.feature-card', {
 
 ScrollTrigger.batch('.room-card', {
   interval: 0.15,
-  batchMax: 3,
+  batchMax: 4,
   onEnter: (elements) => {
     gsap.from(elements, {
       autoAlpha: 0,
-      y: 50,
-      stagger: 0.12,
+      y: 30,
       duration: 0.8,
       overwrite: true
     });
   },
   onLeaveBack: (elements) => {
-    gsap.set(elements, { autoAlpha: 0, y: 50, overwrite: true });
+    gsap.set(elements, { autoAlpha: 0, y: 30, overwrite: true });
   },
   start: 'top 85%',
   once: true
@@ -486,37 +605,35 @@ ScrollTrigger.batch('.room-card', {
 
 ScrollTrigger.batch('.service-card', {
   interval: 0.1,
-  batchMax: 4,
+  batchMax: 6,
   onEnter: (elements) => {
     gsap.from(elements, {
       autoAlpha: 0,
-      y: 40,
-      stagger: 0.08,
+      y: 30,
       duration: 0.6,
       overwrite: true
     });
   },
   onLeaveBack: (elements) => {
-    gsap.set(elements, { autoAlpha: 0, y: 40, overwrite: true });
+    gsap.set(elements, { autoAlpha: 0, y: 30, overwrite: true });
   },
   start: 'top 85%',
   once: true
 });
 
-ScrollTrigger.batch('.activity-card, .attraction-card', {
+ScrollTrigger.batch('.activity-card', {
   interval: 0.08,
-  batchMax: 6,
+  batchMax: 4,
   onEnter: (elements) => {
     gsap.from(elements, {
       autoAlpha: 0,
-      y: 40,
-      stagger: 0.06,
+      y: 30,
       duration: 0.6,
       overwrite: true
     });
   },
   onLeaveBack: (elements) => {
-    gsap.set(elements, { autoAlpha: 0, y: 40, overwrite: true });
+    gsap.set(elements, { autoAlpha: 0, y: 30, overwrite: true });
   },
   start: 'top 85%',
   once: true
@@ -569,19 +686,59 @@ gsap.from('.footer__content', {
   }
 });
 
-gsap.utils.toArray('.hero-image__wrapper, .section-divider__image').forEach(el => {
-  gsap.fromTo(el.querySelector('img'), {
-    scale: 1.08
-  }, {
-    scale: 1,
-    duration: 1.2,
+
+
+// Casa section reveal
+const casaTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.casa__layout',
+    start: 'top 80%',
+    toggleActions: 'play none none reverse'
+  }
+});
+casaTL
+  .from('.casa__image', { autoAlpha: 0, x: -60, duration: 0.9 })
+  .from('.casa__content', { autoAlpha: 0, y: 40, duration: 0.8 }, '-=0.5');
+
+// Stats counter animation
+gsap.utils.toArray('.stat').forEach((stat) => {
+  const numEl = stat.querySelector('.stat__number');
+  const raw = numEl.textContent;
+  const targetVal = parseFloat(raw.replace('+', ''));
+  const hasPlus = raw.includes('+');
+  const isDecimal = targetVal % 1 !== 0;
+
+  const proxy = { val: 0 };
+  gsap.to(proxy, {
+    val: targetVal,
+    duration: 2,
     ease: 'power2.out',
     scrollTrigger: {
-      trigger: el,
-      start: 'top 90%',
-      toggleActions: 'play none none reverse'
+      trigger: stat,
+      start: 'top 85%',
+      toggleActions: 'play none none reverse',
+      once: true
+    },
+    onUpdate: () => {
+      const display = isDecimal ? proxy.val.toFixed(1) : Math.floor(proxy.val);
+      numEl.textContent = hasPlus ? display + '+' : display;
     }
   });
+});
+
+// Gallery stagger
+gsap.from('.gallery__item', {
+  autoAlpha: 0,
+  y: 24,
+  stagger: 0.07,
+  duration: 0.6,
+  ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.gallery-grid',
+    start: 'top 85%',
+    toggleActions: 'play none none none',
+    once: true
+  }
 });
 
 const contactForm = document.getElementById('contact-form');
