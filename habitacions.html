@@ -1,0 +1,1410 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Palmito House — Habitacions i galeria. Descobreix les quatre habitacions dobles i els moments únics de la casa."
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=Radley:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Habitacions — Palmito House</title>
+    <style>
+      section.rooms {
+        padding-top: calc(var(--header-height) + var(--spacing-2xl));
+        scroll-margin-top: calc(var(--header-height) + var(--spacing-lg));
+      }
+
+      section.rooms .section__title em,
+      section.rooms .section__title .title-italic {
+        font-family: Radley, Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+
+      section.gallery {
+        scroll-margin-top: calc(var(--header-height) + var(--spacing-lg));
+      }
+
+      .gallery__item {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Saltar al contingut principal</a>
+
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img src="img/Logo.png" alt="Palmito House" width="200" height="60" />
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__links">
+            <li><a href="index.html#casa" class="nav__link" data-i18n="nav.house">La casa</a></li>
+            <li><a href="habitacions.html#habitacions" class="nav__link" data-i18n="nav.rooms">Habitacions</a></li>
+            <li><a href="index.html#serveis" class="nav__link" data-i18n="nav.services">Experiència</a></li>
+            <li><a href="index.html#activitats" class="nav__link" data-i18n="nav.activities">Activitats</a></li>
+            <li><a href="#galeria" class="nav__link" data-i18n="nav.gallery">Galeria</a></li>
+            <li><a href="index.html#contacte" class="nav__link" data-i18n="nav.contact">Contacte</a></li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <div class="lang-dropdown">
+            <button class="lang-dropdown__trigger" aria-label="Seleccionar idioma">
+              <span class="lang-switcher__flag lang-switcher__flag--ca" id="current-flag"></span>
+              <span class="lang-dropdown__arrow">▼</span>
+            </button>
+            <ul class="lang-dropdown__list">
+              <li>
+                <button class="lang-btn" data-lang="ca" aria-label="Català">
+                  <span class="lang-switcher__flag lang-switcher__flag--ca"></span>
+                  <span>Català</span>
+                </button>
+              </li>
+              <li>
+                <button class="lang-btn" data-lang="es" aria-label="Español">
+                  <span class="lang-switcher__flag lang-switcher__flag--es"></span>
+                  <span>Español</span>
+                </button>
+              </li>
+              <li>
+                <button class="lang-btn" data-lang="en" aria-label="English">
+                  <span class="lang-switcher__flag lang-switcher__flag--en"></span>
+                  <span>English</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <a href="index.html#contacte" class="nav__cta" data-i18n="nav.book">Reservar</a>
+        </div>
+        <button class="nav__toggle" aria-label="Obrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="nav__mobile">
+        <button class="nav__mobile-close" aria-label="Tancar menú">
+          <span></span>
+          <span></span>
+        </button>
+        <a href="index.html#casa" class="nav__mobile-link" data-i18n="nav.house">La casa</a>
+        <a href="habitacions.html#habitacions" class="nav__mobile-link" data-i18n="nav.rooms">Habitacions</a>
+        <a href="index.html#serveis" class="nav__mobile-link" data-i18n="nav.services">Experiència</a>
+        <a href="index.html#activitats" class="nav__mobile-link" data-i18n="nav.activities">Activitats</a>
+        <a href="#galeria" class="nav__mobile-link" data-i18n="nav.gallery">Galeria</a>
+        <a href="index.html#contacte" class="nav__mobile-link" data-i18n="nav.contact">Contacte</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ==================== HABITACIONS ==================== -->
+
+      <section id="habitacions" class="section rooms">
+        <div class="container">
+          <div class="rooms__header">
+            <span class="section__label" data-i18n="rooms.label">Habitacions</span>
+            <h2 class="section__title section__title--large" data-i18n="rooms.title">
+              Les&nbsp;quatre&nbsp;habitacions&nbsp;dobles<br /><em>per al teu relax</em>
+            </h2>
+            <p class="rooms__lead" data-i18n="rooms.lead">
+              Les&nbsp;quatre&nbsp;habitacions&nbsp;dobles us proporcionaran el relax desitjat durant la vostra estada.
+            </p>
+          </div>
+          <div class="rooms__grid">
+            <article class="room-card" data-images='["img/hab-1.avif","img/hab-1-1.avif","img/hab-1-2.avif","img/habitacio.avif"]'>
+              <div class="room-card__image">
+                <img src="img/hab-1.avif" alt="Habitació doble confortable" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room1.title">Habitació Doble Superior</h3>
+                <p class="room-card__text" data-i18n="rooms.room1.text">
+                  Llit king size, bany privat, vistes al jardí i decoració rústica amb toc modern.
+                </p>
+              </div>
+            </article>
+            <article class="room-card" data-images='["img/hab-2.avif","img/hab-2-1.avif"]'>
+              <div class="room-card__image">
+                <img src="img/hab-2.avif" alt="Habitació amb balcó" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room2.title">Habitació amb Balcó</h3>
+                <p class="room-card__text" data-i18n="rooms.room2.text">Balcó privat amb vistes a la muntanya, llit doble i espai de treball.</p>
+              </div>
+            </article>
+            <article class="room-card" data-images='["img/hab-3.avif"]'>
+              <div class="room-card__image">
+                <img src="img/hab-3.avif" alt="Suite familiar" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room3.title">Suite Familiar</h3>
+                <p class="room-card__text" data-i18n="rooms.room3.text">
+                  Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.
+                </p>
+              </div>
+            </article>
+            <article class="room-card" data-images='["img/hab-4.avif"]'>
+              <div class="room-card__image">
+                <img src="img/hab-4.avif" alt="Habitació amb vistes al jardí" width="600" height="450" loading="lazy" />
+              </div>
+              <div class="room-card__content">
+                <h3 class="room-card__title" data-i18n="rooms.room4.title">Habitació Garden View</h3>
+                <p class="room-card__text" data-i18n="rooms.room4.text">Accés directe al jardí, llit doble i una atmosfera de calma absoluta.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== MOMENTS PALMITO (GALERIA) ==================== -->
+
+      <section id="galeria" class="section gallery section--alt">
+        <div class="container">
+          <div class="gallery__header">
+            <span class="section__label" data-i18n="gallery.label">Moments Palmito</span>
+            <h2 class="section__title section__title--large" data-i18n="gallery.title">La bellesa<br /><em>en cada racó</em></h2>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery__item gallery__item--wide">
+              <img src="img/galeria/salo.avif" alt="Saló d'estar principal" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/cuin.avif" alt="Cuina equipada" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/piscina3.avif" alt="Piscina exterior" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/cd6sofa.avif" alt="Zona d'estar amb sofà" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item gallery__item--tall">
+              <img src="img/galeria/coberta.avif" alt="Terrassa amb vistes" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/exterior.avif" alt="Exterior de la casa" width="1920" height="1280" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/salo2.avif" alt="Saló secundari" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/galeria/billar.avif" alt="Sala de billar" width="1200" height="800" loading="lazy" />
+            </div>
+            <div class="gallery__item gallery__item--wide">
+              <img src="img/galeria/piscina.avif" alt="Piscina exterior" width="1200" height="800" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACTE ==================== -->
+
+      <section id="contacte" class="section booking">
+        <div class="container">
+          <div class="booking__layout">
+            <div class="booking__info">
+              <span class="section__label" data-i18n="contact.label">Fes el primer pas</span>
+              <h2 class="section__title section__title--large" data-i18n="contact.title">Reserva la teva<br /><em>experiència</em></h2>
+              <p class="booking__lead" data-i18n="contact.lead">
+                Estem aquí per ajudar-te a planificar la teva escapada ideal. Contacta amb nosaltres per a una atenció totalment personalitzada i
+                detalls exclusius.
+              </p>
+              <div class="booking__details">
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.address.title">Adreça</h3>
+                  <p class="booking__detail-text">Passeig Rebuscall, 13 — Les Planes d'Hostoles — Girona — SPAIN</p>
+                </div>
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.phone.title">Telèfon</h3>
+                  <p class="booking__detail-text"><a href="tel:+34972183206">+34-972-183-206</a></p>
+                </div>
+                <div class="booking__detail">
+                  <h3 class="booking__detail-title" data-i18n="contact.email.title">Email</h3>
+                  <p class="booking__detail-text"><a href="mailto:info@palmitohouse.com">info@palmitohouse.com</a></p>
+                </div>
+              </div>
+              <div class="booking__map">
+                <iframe
+                  src="https://maps.google.com/maps?q=Passeig+Rebuscall+13+Les+Planes+d'Hostoles&output=embed"
+                  width="100%"
+                  height="240"
+                  style="border: 0; border-radius: 8px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Mapa de Palmito House"
+                ></iframe>
+              </div>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.name">Nom complet</label>
+                <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.name_placeholder" placeholder="El teu nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  data-i18n-placeholder="contact.form.email_placeholder"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dates" data-i18n="contact.form.dates">Dates desitjades</label>
+                <input
+                  type="text"
+                  id="dates"
+                  name="dates"
+                  data-i18n-placeholder="contact.form.dates_placeholder"
+                  placeholder="Ex: 15-20 agost 2026"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Missatge</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  data-i18n-placeholder="contact.form.message_placeholder"
+                  placeholder="Explica'ns què necessites..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Enviar consulta</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container">
+          <div class="cta-section__content">
+            <span class="section__label" data-i18n="cta.label">T'esperem</span>
+            <h2 class="section__title section__title--large" data-i18n="cta.title">Preparat per viure la calma?</h2>
+            <p class="cta-section__text" data-i18n="cta.text">
+              Descobreix un entorn únic on cada detall està pensat per a tu. Reserva ara i comença a crear records inoblidables.
+            </p>
+            <a href="#contacte" class="btn btn--primary btn--white" data-i18n="cta.btn">Reserva la teva estada</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== MODAL LIGHTBOX ==================== -->
+      <div class="modal" id="gallery-modal" role="dialog" aria-label="Visor d'imatges" aria-modal="true">
+        <div class="modal__backdrop"></div>
+
+        <button class="modal__close" aria-label="Tancar visor">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--prev" aria-label="Imatge anterior">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--next" aria-label="Imatge següent">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <div class="modal__image-wrapper">
+          <img src="" alt="" />
+        </div>
+
+        <span class="modal__counter"></span>
+      </div>
+
+      <!-- ==================== MODAL HABITACIONS ==================== -->
+      <div class="modal" id="rooms-modal" role="dialog" aria-label="Visor d'habitacions" aria-modal="true">
+        <div class="modal__backdrop"></div>
+
+        <button class="modal__close" aria-label="Tancar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--prev" aria-label="Habitació anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--next" aria-label="Habitació següent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <div class="modal__image-wrapper rooms-modal__wrapper">
+          <img src="" alt="" />
+          <div class="rooms-modal__info">
+            <h3 class="rooms-modal__title"></h3>
+            <p class="rooms-modal__desc"></p>
+          </div>
+        </div>
+
+        <span class="modal__counter rooms-modal__counter"></span>
+      </div>
+
+      <!-- ==================== MODAL VEURE ==================== -->
+      <div class="modal" id="veure-modal" role="dialog" aria-label="Visor d'activitats" aria-modal="true">
+        <div class="modal__backdrop"></div>
+
+        <button class="modal__close" aria-label="Tancar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--prev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <button class="modal__nav modal__nav--next" aria-label="Següent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <div class="modal__image-wrapper veure-modal__wrapper">
+          <img src="" alt="" />
+          <div class="veure-modal__info">
+            <h3 class="veure-modal__title"></h3>
+            <p class="veure-modal__desc"></p>
+          </div>
+        </div>
+
+        <span class="modal__counter veure-modal__counter"></span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <div class="footer__logo">Palmito House</div>
+            <p class="footer__text" data-i18n="footer.text">
+              On l'exclusivitat troba la seva essència natural. La teva llar lluny de casa, al cor de la Garrotxa.
+            </p>
+            <div class="footer__contact-info">
+              <p>Passeig Rebuscall, 13, Les Planes d'Hostoles</p>
+              <p><a href="tel:+34972183206">+34 972 183 206</a></p>
+            </div>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/palmitohouse" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/palmitohouse/?ref=bookmarks"
+                class="footer__social-link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+              <a href="https://wa.me/34972183206" class="footer__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M17.498 14.382c-.518-.26-3.055-1.502-3.528-1.673-.473-.171-.818-.026-1.159.26-.341.286-1.292 1.258-1.584 1.516-.292.258-.584.29-1.102.03-.518-.26-2.186-1.006-3.116-2.142-.306-.374-.612-.779-.864-1.257-.26-.518-.026-.798.195-1.056.195-.23.433-.518.65-.777.217-.26.29-.433.433-.724.144-.29.072-.545-.036-.764-.108-.22-1.005-2.418-1.378-3.316-.362-.875-.73-.756-.998-.77-.259-.014-.562-.018-.86-.018-.29 0-.76.112-1.159.562-.4.45-1.527 1.494-1.527 3.644 0 2.15 1.565 4.228 1.783 4.52.218.29 3.08 4.66 7.462 5.84 4.382 1.18 4.382.822 5.172.77.79-.05 2.55-1.04 2.91-2.045.36-1.004.36-1.864.25-2.045-.11-.18-.403-.29-.922-.55z"
+                  />
+                  <path d="M12 21a9 9 0 1 0-7.794-4.793L3 21l4.793-1.206A8.958 8.958 0 0 0 12 21z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-col">
+              <a href="index.html#casa" class="footer__link" data-i18n="nav.house">La casa</a>
+              <a href="index.html#serveis" class="footer__link" data-i18n="nav.services">Experiència</a>
+              <a href="index.html#contacte" class="footer__link" data-i18n="nav.contact">Contacte</a>
+            </div>
+            <div class="footer__nav-col">
+              <a href="index.html" class="footer__link">Inici</a>
+              <a href="habitacions.html" class="footer__link">Habitacions</a>
+              <a href="index.html#galeria" class="footer__link" data-i18n="nav.gallery">Galeria</a>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 Palmito House. Tots els drets reservats.</p>
+          <p class="footer__copy">Dissenyat per <a href="https://vorastudio.com" target="_blank">Vora Studio</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+      // ==================== LENIS ====================
+
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: "vertical",
+        gestureDirection: "vertical",
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+      });
+
+      lenis.on("scroll", ScrollTrigger.update);
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+
+      // ==================== I18N ====================
+
+      const i18n = {
+        ca: {
+          "nav.house": "La casa",
+          "nav.rooms": "Habitacions",
+          "nav.services": "Experiència",
+          "nav.activities": "Activitats",
+          "nav.gallery": "Galeria",
+          "nav.contact": "Contacte",
+          "nav.book": "Reservar",
+          "rooms.label": "Habitacions",
+          "rooms.title": 'Les&nbsp;quatre&nbsp;habitacions&nbsp;dobles<br /><span class="title-italic">per al teu relax</span>',
+          "rooms.lead": "Les&nbsp;quatre&nbsp;habitacions&nbsp;dobles us proporcionaran el relax desitjat durant la vostra estada.",
+          "rooms.room1.title": "Habitació Doble Superior",
+          "rooms.room1.text": "Llit king size, bany privat, vistes al jardí i decoració rústica amb toc modern.",
+          "rooms.room2.title": "Habitació amb Balcó",
+          "rooms.room2.text": "Balcó privat amb vistes a la muntanya, llit doble i espai de treball.",
+          "rooms.room3.title": "Suite Familiar",
+          "rooms.room3.text": "Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.",
+          "rooms.room4.title": "Habitació Garden View",
+          "rooms.room4.text": "Accés directe al jardí, llit doble i una atmosfera de calma absoluta.",
+          "gallery.label": "Moments Palmito",
+          "gallery.title": "La bellesa<br /><em>en cada racó</em>",
+          "footer.text": "On l'exclusivitat troba la seva essència natural. La teva llar lluny de casa, al cor de la Garrotxa.",
+        },
+        es: {
+          "nav.house": "La casa",
+          "nav.rooms": "Habitaciones",
+          "nav.services": "Experiencia",
+          "nav.activities": "Actividades",
+          "nav.gallery": "Galería",
+          "nav.contact": "Contacto",
+          "nav.book": "Reservar",
+          "rooms.label": "Habitaciones",
+          "rooms.title": 'Las&nbsp;cuatro&nbsp;habitaciones&nbsp;dobles<br /><span class="title-italic">para tu relax</span>',
+          "rooms.lead": "Las&nbsp;cuatro&nbsp;habitaciones&nbsp;dobles le proporcionarán el relax deseado durante su estancia.",
+          "rooms.room1.title": "Habitación Doble Superior",
+          "rooms.room1.text": "Cama king size, baño privado, vistas al jardín y decoración rústica con toque moderno.",
+          "rooms.room2.title": "Habitación con Balcón",
+          "rooms.room2.text": "Balcón privado con vistas a la montaña, cama doble y espacio de trabajo.",
+          "rooms.room3.title": "Suite Familiar",
+          "rooms.room3.text": "Dos ambientes conectados, ideal para familias con niños. Capacidad para 4 personas.",
+          "rooms.room4.title": "Habitación Garden View",
+          "rooms.room4.text": "Acceso directo al jardín, cama doble y una atmósfera de calma absoluta.",
+          "gallery.label": "Momentos Palmito",
+          "gallery.title": "La belleza<br /><em>en cada rincón</em>",
+          "footer.text": "Donde la exclusividad encuentra su esencia natural. Tu hogar lejos de casa, en el corazón de la Garrotxa.",
+        },
+        en: {
+          "nav.house": "The house",
+          "nav.rooms": "Rooms",
+          "nav.services": "Services",
+          "nav.activities": "Activities",
+          "nav.gallery": "Gallery",
+          "nav.contact": "Contact",
+          "nav.book": "Book now",
+          "rooms.label": "Rooms",
+          "rooms.title": 'Four double rooms<br /><span class="title-italic">for your relaxation</span>',
+          "rooms.lead": "The&nbsp;four&nbsp;double&nbsp;rooms will provide you with the desired relaxation during your stay.",
+          "rooms.room1.title": "Superior Double Room",
+          "rooms.room1.text": "King size bed, private bathroom, garden views and rustic decor with a modern touch.",
+          "rooms.room2.title": "Room with Balcony",
+          "rooms.room2.text": "Private balcony with mountain views, double bed and workspace.",
+          "rooms.room3.title": "Family Suite",
+          "rooms.room3.text": "Two connected spaces, ideal for families with children. Capacity for 4 people.",
+          "rooms.room4.title": "Garden View Room",
+          "rooms.room4.text": "Direct garden access, double bed and an atmosphere of absolute calm.",
+          "gallery.label": "Palmito Moments",
+          "gallery.title": "Beauty<br /><em>in every corner</em>",
+          "footer.text": "Where exclusivity meets its natural essence. Your home away from home, in the heart of Garrotxa.",
+        },
+      };
+
+      let currentLang = "ca";
+
+      window.activeSplits = [];
+      window.titleSplits = [];
+
+      function initTextMaskAnimations() {
+        var textElements = document.querySelectorAll(".rooms__lead, .booking__lead, .cta-section__text");
+
+        if (window.activeSplits && window.activeSplits.length > 0) {
+          window.activeSplits.forEach((s) => {
+            if (typeof s.revert === "function") {
+              s.revert();
+            }
+          });
+          window.activeSplits = [];
+        }
+
+        textElements.forEach(function (el) {
+          if (typeof SplitText !== "undefined") {
+            var split = new SplitText(el, { type: "lines", linesClass: "line-parent" });
+
+            window.activeSplits.push(split);
+
+            gsap.set(split.lines, {
+              perspective: 800,
+              transformStyle: "preserve-3d",
+              overflow: "hidden",
+              transformOrigin: "top center",
+            });
+
+            gsap.set(split.lines, {
+              opacity: 0,
+              rotationX: -90,
+            });
+
+            gsap.to(split.lines, {
+              duration: 1.8,
+              opacity: 1,
+              rotationX: 0,
+              ease: "power3.out",
+              stagger: {
+                each: 0.2,
+                from: "start",
+              },
+              scrollTrigger: {
+                trigger: el,
+                start: "top 88%",
+                toggleActions: "play none play reverse",
+              },
+            });
+          } else {
+            var originalHTML = el.getAttribute("data-original-html") || el.innerHTML;
+            el.setAttribute("data-original-html", originalHTML);
+
+            var linesHTML = [];
+            if (originalHTML.includes("<br")) {
+              var parts = originalHTML.split(/<br\s*\/?>/i);
+              linesHTML = parts.map(function (part) {
+                return '<div class="line-parent" style="overflow:hidden; perspective:800px;"><div class="line-child" style="display:block; will-change:transform; transform-origin:top center; transform-style:preserve-3d;">' + part + '</div></div>';
+              });
+              el.innerHTML = linesHTML.join("");
+            } else {
+              var text = el.textContent.trim().replace(/\s+/g, " ");
+              var words = text.split(" ");
+
+              el.innerHTML = words.map(function (w) {
+                return '<span class="fallback-word" style="display:inline-block;">' + w + '</span>';
+              }).join(" ");
+
+              var wordSpans = el.querySelectorAll(".fallback-word");
+              var linesMap = new Map();
+
+              wordSpans.forEach(function (span) {
+                var top = span.offsetTop;
+                if (!linesMap.has(top)) {
+                  linesMap.set(top, []);
+                }
+                linesMap.get(top).push(span.textContent);
+              });
+
+              var newHTML = "";
+              linesMap.forEach(function (wordsInLine) {
+                var lineText = wordsInLine.join(" ");
+                newHTML += '<div class="line-parent" style="overflow:hidden; perspective:800px;"><div class="line-child" style="display:block; will-change:transform; transform-origin:top center; transform-style:preserve-3d;">' + lineText + '</div></div>';
+              });
+
+              el.innerHTML = newHTML;
+            }
+
+            var lines = el.querySelectorAll(".line-child");
+
+            window.activeSplits.push({
+              revert: function () {
+                el.innerHTML = originalHTML;
+              }
+            });
+
+            gsap.set(lines, { opacity: 0, rotationX: -90 });
+            gsap.to(lines, {
+              duration: 1.4,
+              opacity: 1,
+              rotationX: 0,
+              ease: "power3.out",
+              stagger: { each: 0.15, from: "center" },
+              scrollTrigger: {
+                trigger: el,
+                start: "top 88%",
+                toggleActions: "play none play reverse",
+              },
+            });
+          }
+        });
+      }
+
+      function initSectionTitleAnimations() {
+        var titles = document.querySelectorAll(".section__title");
+
+        if (window.titleSplits && window.titleSplits.length > 0) {
+          window.titleSplits.forEach(function (s) {
+            if (typeof s.revert === "function") {
+              s.revert();
+            }
+          });
+          window.titleSplits = [];
+        }
+
+        if (typeof SplitText === "undefined") return;
+
+        titles.forEach(function (el) {
+          var split = new SplitText(el, {
+            type: "chars, lines",
+          });
+
+          window.titleSplits.push(split);
+
+          gsap.set(split.lines, {
+            perspective: 800,
+            transformStyle: "preserve-3d",
+            overflow: "hidden",
+          });
+
+          gsap.set(split.chars, {
+            opacity: 0,
+            rotationX: -90,
+            transformOrigin: "top center",
+          });
+
+          gsap.to(split.chars, {
+            duration: 0.6,
+            opacity: 1,
+            rotationX: 0,
+            ease: "power3.out",
+            stagger: {
+              each: 0.03,
+              from: "start",
+            },
+            scrollTrigger: {
+              trigger: el,
+              start: "top 88%",
+              toggleActions: "play none play reverse",
+            },
+          });
+        });
+      }
+
+      function setLanguage(lang) {
+        if (window.activeSplits && window.activeSplits.length > 0) {
+          window.activeSplits.forEach((s) => {
+            if (typeof s.revert === "function") {
+              s.revert();
+            }
+          });
+          window.activeSplits = [];
+        }
+
+        if (window.titleSplits && window.titleSplits.length > 0) {
+          window.titleSplits.forEach((s) => {
+            if (typeof s.revert === "function") {
+              s.revert();
+            }
+          });
+          window.titleSplits = [];
+        }
+
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (i18n[lang] && i18n[lang][key]) {
+            el.innerHTML = i18n[lang][key];
+          }
+        });
+
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          btn.classList.toggle("lang-btn--active", btn.getAttribute("data-lang") === lang);
+        });
+
+        const currentFlagEl = document.getElementById("current-flag");
+        if (currentFlagEl) {
+          currentFlagEl.className = "lang-switcher__flag lang-switcher__flag--" + lang;
+        }
+
+        localStorage.setItem("palmito-lang", lang);
+
+        initTextMaskAnimations();
+        initSectionTitleAnimations();
+      }
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setLanguage(btn.getAttribute("data-lang"));
+        });
+      });
+
+      const savedLang = localStorage.getItem("palmito-lang");
+      if (savedLang && i18n[savedLang]) {
+        setLanguage(savedLang);
+      } else {
+        initTextMaskAnimations();
+        initSectionTitleAnimations();
+      }
+
+      // ==================== GSAP + SCROLLTRIGGER ====================
+
+      if (typeof SplitText !== "undefined") {
+        gsap.registerPlugin(ScrollTrigger, SplitText);
+      } else {
+        gsap.registerPlugin(ScrollTrigger);
+      }
+      gsap.defaults({ ease: "power3.out" });
+
+      // ==================== HEADER ====================
+
+      const header = document.querySelector(".header");
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("header--scrolled", window.scrollY > 80);
+      });
+
+      gsap.set(".header", { autoAlpha: 0 });
+      const headerTL = gsap.timeline({ delay: 0.05 });
+      headerTL
+        .to(".header", { autoAlpha: 1, duration: 0.3, ease: "power2.out" })
+        .from(".header__logo", { y: -24, autoAlpha: 0, duration: 0.6, ease: "power3.out" }, "-=0.1")
+        .from(".nav__link", { y: -20, autoAlpha: 0, stagger: 0.06, duration: 0.5, ease: "power3.out" }, "-=0.35")
+        .from(".lang-btn, .nav__cta, .nav__toggle", { y: -20, autoAlpha: 0, stagger: 0.06, duration: 0.5, ease: "power3.out" }, "-=0.3");
+
+      // ==================== MOBILE MENU ====================
+
+      const navToggle = document.querySelector(".nav__toggle");
+      const navMobile = document.querySelector(".nav__mobile");
+      const mobileLinks = document.querySelectorAll(".nav__mobile-link");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navMobile.classList.contains("nav__mobile--open");
+        if (isOpen) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && navMobile.classList.contains("nav__mobile--open")) {
+          closeMobileMenu();
+        }
+      });
+
+      let mobileMenuTL = null;
+      const mobileCloseBtn = document.querySelector(".nav__mobile-close");
+
+      function openMobileMenu() {
+        if (mobileMenuTL) mobileMenuTL.kill();
+
+        gsap.set(navMobile, { x: "100%", visibility: "visible" });
+        navToggle.classList.add("nav__toggle--active");
+        navToggle.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+
+        mobileMenuTL = gsap
+          .timeline()
+          .to(navMobile, { x: "0%", duration: 0.6, ease: "power4.out" })
+          .fromTo(
+            ".nav__mobile-link",
+            { autoAlpha: 0, y: 20 },
+            { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.06, ease: "power3.out" },
+            "-=0.3",
+          )
+          .fromTo(
+            ".nav__mobile-close",
+            { autoAlpha: 0, rotate: -45 },
+            { autoAlpha: 1, rotate: 0, duration: 0.4, ease: "power2.out" },
+            "-=0.3",
+          );
+      }
+
+      function closeMobileMenu() {
+        if (mobileMenuTL) mobileMenuTL.kill();
+
+        navToggle.classList.remove("nav__toggle--active");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+
+        mobileMenuTL = gsap
+          .timeline({
+            onComplete: () => {
+              gsap.set(navMobile, { visibility: "hidden" });
+              navToggle.focus();
+            },
+          })
+          .to(".nav__mobile-link", {
+            autoAlpha: 0,
+            y: -10,
+            duration: 0.25,
+            stagger: 0.03,
+            ease: "power2.in",
+          })
+          .to(navMobile, { x: "100%", duration: 0.5, ease: "power4.in" }, "-=0.15");
+      }
+
+      if (mobileCloseBtn) {
+        mobileCloseBtn.addEventListener("click", closeMobileMenu);
+      }
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          closeMobileMenu();
+        });
+      });
+
+      // ==================== SMOOTH SCROLL ====================
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = this.getAttribute("href");
+          if (target && target !== "#") {
+            lenis.scrollTo(target);
+          }
+        });
+      });
+
+      // ==================== ROOM CARDS ANIMATION ====================
+
+      gsap.utils.toArray(".room-card").forEach((card) => {
+        gsap.from(card, {
+          autoAlpha: 0,
+          y: 60,
+          duration: 1.8,
+          ease: "power2.out",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            toggleActions: "play none none reverse",
+          },
+        });
+      });
+
+      // ==================== GALLERY ITEMS ====================
+
+      gsap.utils.toArray(".gallery__item").forEach((item, i) => {
+        gsap.from(item, {
+          autoAlpha: 0,
+          y: 60,
+          duration: 1.6,
+          ease: "power2.out",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%",
+            toggleActions: "play none none reverse",
+          },
+        });
+      });
+
+      // Section labels fade-up animation
+      gsap.utils.toArray(".section__label").forEach((el) => {
+        gsap.from(el, {
+          autoAlpha: 0,
+          y: 24,
+          duration: 1.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 88%",
+            toggleActions: "play none play reverse",
+          },
+        });
+      });
+
+      // ==================== FOOTER ====================
+
+      gsap.from(".footer__content", {
+        autoAlpha: 0,
+        y: 30,
+        duration: 0.7,
+        scrollTrigger: { trigger: ".footer", start: "top 90%", toggleActions: "play none none reverse" },
+      });
+
+      // ==================== MODAL LIGHTBOX ====================
+
+      const modal = document.getElementById("gallery-modal");
+      const modalImg = modal.querySelector(".modal__image-wrapper img");
+      const modalWrapper = modal.querySelector(".modal__image-wrapper");
+      const modalBackdrop = modal.querySelector(".modal__backdrop");
+      const modalClose = modal.querySelector(".modal__close");
+      const modalPrev = modal.querySelector(".modal__nav--prev");
+      const modalNext = modal.querySelector(".modal__nav--next");
+      const modalCounter = modal.querySelector(".modal__counter");
+      const modalControls = [modalClose, modalPrev, modalNext, modalCounter];
+      const galleryItems = document.querySelectorAll(".gallery__item");
+
+      let currentIndex = 0;
+
+      const ALL_GALLERY_IMAGES = [
+        { src: "img/galeria/0036ccc2-a0ad-436b-8efb-9521634ef21d.avif", alt: "Palmito House" },
+        { src: "img/galeria/06b22924-43b7-4a8d-8d9f-80738b76a86f.avif", alt: "Palmito House" },
+        { src: "img/galeria/0ba5eaf6-94c3-42c8-b4be-4e5a5ee1430e.avif", alt: "Palmito House" },
+        { src: "img/galeria/0e4430ab-cff0-4787-a6a1-1f5e384df69f.avif", alt: "Palmito House" },
+        { src: "img/galeria/202bd6e9-066f-4f8a-994d-7e945718fc3b.avif", alt: "Palmito House" },
+        { src: "img/galeria/230ac790-c6bf-4fd0-9839-e8d049a7ed58.avif", alt: "Palmito House" },
+        { src: "img/galeria/267aa409-cd69-451f-bf13-adc63659467e.jpeg", alt: "Palmito House" },
+        { src: "img/galeria/2853db95-9534-4062-a254-28f2b24020b5.avif", alt: "Palmito House" },
+        { src: "img/galeria/2add523d-50a5-422a-ae3e-dbf6f1f97f13.avif", alt: "Palmito House" },
+        { src: "img/galeria/2cc9cc6b-f0ce-4178-bf32-4ef16f3b5d14.avif", alt: "Palmito House" },
+        { src: "img/galeria/3d0cbdb2-1c32-442a-a4a9-e8706aefd147.avif", alt: "Palmito House" },
+        { src: "img/galeria/49b70f2e-d377-41a0-b28f-efd53b934a92.avif", alt: "Palmito House" },
+        { src: "img/galeria/4a68ba42-f400-42c7-a93a-74d3071f664b.avif", alt: "Palmito House" },
+        { src: "img/galeria/4d833e5b-ea02-4be0-bba5-93b497019880.avif", alt: "Palmito House" },
+        { src: "img/galeria/500073f0-8698-43f0-b467-c1cab2540188.avif", alt: "Palmito House" },
+        { src: "img/galeria/5a5e62f1-13c3-4be4-b29b-d7bad09a240d.avif", alt: "Palmito House" },
+        { src: "img/galeria/631b826a-c772-43e5-9698-52954d6e258b.avif", alt: "Palmito House" },
+        { src: "img/galeria/81c8fe22-3f7f-4730-aa19-676f4954c5aa.avif", alt: "Palmito House" },
+        { src: "img/galeria/82ae7202-df86-42b2-a562-0ad6beae2fc0.avif", alt: "Palmito House" },
+        { src: "img/galeria/8725d122-58d0-44bb-a55f-9f661a56b511.avif", alt: "Palmito House" },
+        { src: "img/galeria/95db20cf-2a26-479f-b286-5bc36968072f.avif", alt: "Palmito House" },
+        { src: "img/galeria/988d48be-f6b9-4704-9c43-2bc1e61e7a59.avif", alt: "Palmito House" },
+        { src: "img/galeria/9c220dea-e661-4ba3-93de-d1d52f275e28.avif", alt: "Palmito House" },
+        { src: "img/galeria/billar.avif", alt: "Sala de billar" },
+        { src: "img/galeria/ccb89646-2098-4e72-a6b6-ef42315e6e47.avif", alt: "Palmito House" },
+        { src: "img/galeria/cd6sofa.avif", alt: "Zona d'estar amb sofà" },
+        { src: "img/galeria/coberta.avif", alt: "Terrassa amb vistes" },
+        { src: "img/galeria/cuin.avif", alt: "Cuina equipada" },
+        { src: "img/galeria/d5771a1d-a121-4693-b840-a0bff53eec75.avif", alt: "Palmito House" },
+        { src: "img/galeria/e90f0a9e-bc07-4605-9857-eb9dc8ae28cb.avif", alt: "Palmito House" },
+        { src: "img/galeria/exterior.avif", alt: "Exterior de la casa" },
+        { src: "img/galeria/f44df969-feec-4cb1-9fa3-841a58788e29.avif", alt: "Palmito House" },
+        { src: "img/galeria/f6d05a9e-cd16-4e7d-903a-72a0dcae1edb.avif", alt: "Palmito House" },
+        { src: "img/galeria/f6dee1a6-1d2a-4f37-ac10-7401256a5c99.avif", alt: "Palmito House" },
+        { src: "img/galeria/f9f3ecb0-7aab-4aea-8d95-6c25b0cceee8.avif", alt: "Palmito House" },
+        { src: "img/galeria/pisci3.avif", alt: "Piscina i jardí" },
+        { src: "img/galeria/pisci4.avif", alt: "Piscina" },
+        { src: "img/galeria/piscina.avif", alt: "Piscina exterior" },
+        { src: "img/galeria/piscina2.avif", alt: "Piscina amb vistes" },
+        { src: "img/galeria/piscina3.avif", alt: "Piscina exterior" },
+        { src: "img/galeria/salo.avif", alt: "Saló d'estar principal" },
+        { src: "img/galeria/salo2.avif", alt: "Saló secundari" },
+        { src: "img/galeria/salo3.avif", alt: "Saló principal" },
+      ];
+
+      const imageSources = ALL_GALLERY_IMAGES;
+
+      galleryItems.forEach((item) => {
+        const img = item.querySelector("img");
+        const src = img.getAttribute("src");
+        const matchIndex = imageSources.findIndex((entry) => entry.src === src);
+        const openIndex = matchIndex >= 0 ? matchIndex : 0;
+
+        item.addEventListener("click", () => openModal(openIndex));
+        item.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openModal(openIndex);
+          }
+        });
+        item.setAttribute("tabindex", "0");
+        item.setAttribute("role", "button");
+      });
+
+      function updateCounter() {
+        modalCounter.textContent = `${currentIndex + 1} / ${imageSources.length}`;
+      }
+
+      function openModal(index) {
+        currentIndex = index;
+        modalImg.src = imageSources[index].src;
+        modalImg.alt = imageSources[index].alt;
+        updateCounter();
+
+        gsap.set(modal, { display: "flex", visibility: "visible", pointerEvents: "all" });
+        gsap.set([modalBackdrop, modalWrapper, ...modalControls], { autoAlpha: 0 });
+        gsap.set(modalWrapper, { scale: 0.4, y: 40 });
+        gsap.set(modalControls, { y: 16 });
+
+        const tl = gsap.timeline();
+        tl.to(modalBackdrop, { autoAlpha: 1, duration: 0.4, ease: "power2.out" })
+          .to(modalWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.7, ease: "power4.out" }, "-=0.15")
+          .to(modalControls, { autoAlpha: 1, y: 0, duration: 0.35, stagger: 0.04, ease: "power2.out" }, "-=0.25");
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const tl = gsap.timeline({
+          onComplete: () => {
+            modal.style.display = "none";
+            modal.style.visibility = "hidden";
+            modal.style.pointerEvents = "none";
+            document.body.style.overflow = "";
+          },
+        });
+
+        tl.to(modalWrapper, { autoAlpha: 0, scale: 0.8, y: -20, duration: 0.3, ease: "power2.in" }, 0)
+          .to(modalBackdrop, { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, 0)
+          .to(modalControls, { autoAlpha: 0, duration: 0.15 }, 0);
+      }
+
+      function navigate(direction) {
+        gsap.to(modalWrapper, {
+          autoAlpha: 0,
+          scale: 0.85,
+          y: -15,
+          duration: 0.2,
+          ease: "power2.in",
+          onComplete: () => {
+            currentIndex = (currentIndex + direction + imageSources.length) % imageSources.length;
+            modalImg.src = imageSources[currentIndex].src;
+            modalImg.alt = imageSources[currentIndex].alt;
+            updateCounter();
+
+            gsap.set(modalWrapper, { autoAlpha: 0, scale: 0.85, y: 20 });
+            gsap.to(modalWrapper, {
+              autoAlpha: 1,
+              scale: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power3.out",
+            });
+          },
+        });
+      }
+
+      modalClose.addEventListener("click", closeModal);
+      modalBackdrop.addEventListener("click", (e) => {
+        if (e.target === modalBackdrop) closeModal();
+      });
+
+      modalPrev.addEventListener("click", () => navigate(-1));
+      modalNext.addEventListener("click", () => navigate(1));
+
+      document.addEventListener("keydown", (e) => {
+        if (modal.style.display !== "flex") return;
+
+        if (e.key === "Escape") {
+          closeModal();
+        }
+        if (e.key === "ArrowLeft") {
+          navigate(-1);
+        }
+        if (e.key === "ArrowRight") {
+          navigate(1);
+        }
+      });
+
+      // ==================== MODAL HABITACIONS ====================
+
+      const roomsModal = document.getElementById("rooms-modal");
+      if (roomsModal) {
+        const rmImg = roomsModal.querySelector(".modal__image-wrapper img");
+        const rmTitle = roomsModal.querySelector(".rooms-modal__title");
+        const rmDesc = roomsModal.querySelector(".rooms-modal__desc");
+        const rmWrapper = roomsModal.querySelector(".modal__image-wrapper");
+        const rmBackdrop = roomsModal.querySelector(".modal__backdrop");
+        const rmClose = roomsModal.querySelector(".modal__close");
+        const rmPrev = roomsModal.querySelector(".modal__nav--prev");
+        const rmNext = roomsModal.querySelector(".modal__nav--next");
+        const rmCounter = roomsModal.querySelector(".modal__counter");
+        const rmControls = [rmClose, rmPrev, rmNext, rmCounter];
+        const roomCards = document.querySelectorAll(".room-card");
+
+        let rmIndex = 0;
+        let rmSources = [];
+        let rmCurrentTitle = "";
+        let rmCurrentDesc = "";
+
+        roomCards.forEach((card) => {
+          const img = card.querySelector(".room-card__image img");
+          const title = card.querySelector(".room-card__title");
+          const text = card.querySelector(".room-card__text");
+
+          card.addEventListener("click", () => {
+            const images = card.dataset.images;
+            rmSources = images ? JSON.parse(images) : [img.src];
+            rmIndex = 0;
+            rmCurrentTitle = title.textContent;
+            rmCurrentDesc = text.textContent;
+            updateRoomsUI();
+
+            gsap.set(roomsModal, { display: "flex", visibility: "visible", pointerEvents: "all" });
+            gsap.set([rmBackdrop, rmWrapper, ...rmControls], { autoAlpha: 0 });
+            gsap.set(rmWrapper, { scale: 0.4, y: 40 });
+            gsap.set(rmControls, { y: 16 });
+
+            const tl = gsap.timeline();
+            tl.to(rmBackdrop, { autoAlpha: 1, duration: 0.4, ease: "power2.out" })
+              .to(rmWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.7, ease: "power4.out" }, "-=0.15")
+              .to(rmControls, { autoAlpha: 1, y: 0, duration: 0.35, stagger: 0.04, ease: "power2.out" }, "-=0.25");
+
+            document.body.style.overflow = "hidden";
+          });
+
+          card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              card.click();
+            }
+          });
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("role", "button");
+        });
+
+        function updateRoomsUI() {
+          rmImg.src = rmSources[rmIndex];
+          rmTitle.textContent = rmCurrentTitle;
+          rmDesc.textContent = rmCurrentDesc;
+          if (rmSources.length > 1) {
+            rmCounter.textContent = `${rmIndex + 1} / ${rmSources.length}`;
+            gsap.set([rmPrev, rmNext, rmCounter], { display: "flex" });
+          } else {
+            gsap.set([rmPrev, rmNext, rmCounter], { display: "none" });
+          }
+        }
+
+        function closeRoomsModal() {
+          const tl = gsap.timeline({
+            onComplete: () => {
+              roomsModal.style.display = "none";
+              roomsModal.style.visibility = "hidden";
+              roomsModal.style.pointerEvents = "none";
+              document.body.style.overflow = "";
+            },
+          });
+          tl.to(rmWrapper, { autoAlpha: 0, scale: 0.8, y: -20, duration: 0.3, ease: "power2.in" }, 0)
+            .to(rmBackdrop, { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, 0)
+            .to(rmControls, { autoAlpha: 0, duration: 0.15 }, 0);
+        }
+
+        function navigateRooms(direction) {
+          gsap.to(rmWrapper, {
+            autoAlpha: 0,
+            scale: 0.85,
+            y: -15,
+            duration: 0.2,
+            ease: "power2.in",
+            onComplete: () => {
+              rmIndex = (rmIndex + direction + rmSources.length) % rmSources.length;
+              updateRoomsUI();
+              gsap.set(rmWrapper, { autoAlpha: 0, scale: 0.85, y: 20 });
+              gsap.to(rmWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" });
+            },
+          });
+        }
+
+        rmClose.addEventListener("click", closeRoomsModal);
+        rmBackdrop.addEventListener("click", (e) => {
+          if (e.target === rmBackdrop) closeRoomsModal();
+        });
+        rmPrev.addEventListener("click", () => navigateRooms(-1));
+        rmNext.addEventListener("click", () => navigateRooms(1));
+
+        document.addEventListener("keydown", (e) => {
+          if (roomsModal.style.display !== "flex") return;
+          if (e.key === "Escape") closeRoomsModal();
+          if (e.key === "ArrowLeft") navigateRooms(-1);
+          if (e.key === "ArrowRight") navigateRooms(1);
+        });
+      }
+
+      // ==================== MODAL VEURE ====================
+
+      const veureModal = document.getElementById("veure-modal");
+      if (veureModal) {
+        const vmImg = veureModal.querySelector(".modal__image-wrapper img");
+        const vmTitle = veureModal.querySelector(".veure-modal__title");
+        const vmDesc = veureModal.querySelector(".veure-modal__desc");
+        const vmWrapper = veureModal.querySelector(".modal__image-wrapper");
+        const vmBackdrop = veureModal.querySelector(".modal__backdrop");
+        const vmClose = veureModal.querySelector(".modal__close");
+        const vmPrev = veureModal.querySelector(".modal__nav--prev");
+        const vmNext = veureModal.querySelector(".modal__nav--next");
+        const vmCounter = veureModal.querySelector(".modal__counter");
+        const vmControls = [vmClose, vmPrev, vmNext, vmCounter];
+        const veureCards = document.querySelectorAll(".veure__card");
+
+        let vmIndex = 0;
+        let vmSources = [];
+        let vmCurrentTitle = "";
+        let vmCurrentDesc = "";
+
+        veureCards.forEach((card) => {
+          const title = card.querySelector(".veure__title");
+          const desc = card.querySelector(".veure__desc");
+
+          card.addEventListener("click", () => {
+            const images = card.dataset.images;
+            vmSources = images ? JSON.parse(images) : [card.querySelector("img").src];
+            vmIndex = 0;
+            vmCurrentTitle = title.textContent;
+            vmCurrentDesc = desc.textContent;
+            updateVeureUI();
+
+            gsap.set(veureModal, { display: "flex", visibility: "visible", pointerEvents: "all" });
+            gsap.set([vmBackdrop, vmWrapper, ...vmControls], { autoAlpha: 0 });
+            gsap.set(vmWrapper, { scale: 0.4, y: 40 });
+            gsap.set(vmControls, { y: 16 });
+
+            const tl = gsap.timeline();
+            tl.to(vmBackdrop, { autoAlpha: 1, duration: 0.4, ease: "power2.out" })
+              .to(vmWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.7, ease: "power4.out" }, "-=0.15")
+              .to(vmControls, { autoAlpha: 1, y: 0, duration: 0.35, stagger: 0.04, ease: "power2.out" }, "-=0.25");
+
+            document.body.style.overflow = "hidden";
+          });
+
+          card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              card.click();
+            }
+          });
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("role", "button");
+        });
+
+        function updateVeureUI() {
+          vmImg.src = vmSources[vmIndex];
+          vmTitle.textContent = vmCurrentTitle;
+          vmDesc.textContent = vmCurrentDesc;
+          if (vmSources.length > 1) {
+            vmCounter.textContent = `${vmIndex + 1} / ${vmSources.length}`;
+            gsap.set([vmPrev, vmNext, vmCounter], { display: "flex" });
+          } else {
+            gsap.set([vmPrev, vmNext, vmCounter], { display: "none" });
+          }
+        }
+
+        function closeVeureModal() {
+          const tl = gsap.timeline({
+            onComplete: () => {
+              veureModal.style.display = "none";
+              veureModal.style.visibility = "hidden";
+              veureModal.style.pointerEvents = "none";
+              document.body.style.overflow = "";
+            },
+          });
+          tl.to(vmWrapper, { autoAlpha: 0, scale: 0.8, y: -20, duration: 0.3, ease: "power2.in" }, 0)
+            .to(vmBackdrop, { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, 0)
+            .to(vmControls, { autoAlpha: 0, duration: 0.15 }, 0);
+        }
+
+        function navigateVeure(direction) {
+          gsap.to(vmWrapper, {
+            autoAlpha: 0,
+            scale: 0.85,
+            y: -15,
+            duration: 0.2,
+            ease: "power2.in",
+            onComplete: () => {
+              vmIndex = (vmIndex + direction + vmSources.length) % vmSources.length;
+              updateVeureUI();
+              gsap.set(vmWrapper, { autoAlpha: 0, scale: 0.85, y: 20 });
+              gsap.to(vmWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" });
+            },
+          });
+        }
+
+        vmClose.addEventListener("click", closeVeureModal);
+        vmBackdrop.addEventListener("click", (e) => {
+          if (e.target === vmBackdrop) closeVeureModal();
+        });
+        vmPrev.addEventListener("click", () => navigateVeure(-1));
+        vmNext.addEventListener("click", () => navigateVeure(1));
+
+        document.addEventListener("keydown", (e) => {
+          if (veureModal.style.display !== "flex") return;
+          if (e.key === "Escape") closeVeureModal();
+          if (e.key === "ArrowLeft") navigateVeure(-1);
+          if (e.key === "ArrowRight") navigateVeure(1);
+        });
+      }
+    </script>
+  </body>
+</html>
