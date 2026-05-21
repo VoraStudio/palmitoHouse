@@ -54,7 +54,7 @@
             <li><a href="habitacions.html#habitacions" class="nav__link" data-i18n="nav.rooms">Habitacions</a></li>
             <li><a href="index.html#serveis" class="nav__link" data-i18n="nav.services">Serveis</a></li>
             <li><a href="index.html#activitats" class="nav__link" data-i18n="nav.activities">Activitats</a></li>
-            <li><a href="#galeria" class="nav__link" data-i18n="nav.gallery">Entorn</a></li>
+            <li><a href="index.html#veure" class="nav__link" data-i18n="nav.gallery">Entorn</a></li>
             <li><a href="index.html#contacte" class="nav__link" data-i18n="nav.contact">Contacte</a></li>
           </ul>
         </nav>
@@ -102,7 +102,7 @@
         <a href="habitacions.html#habitacions" class="nav__mobile-link" data-i18n="nav.rooms">Habitacions</a>
         <a href="index.html#serveis" class="nav__mobile-link" data-i18n="nav.services">Serveis</a>
         <a href="index.html#activitats" class="nav__mobile-link" data-i18n="nav.activities">Activitats</a>
-        <a href="#galeria" class="nav__mobile-link" data-i18n="nav.gallery">Entorn</a>
+        <a href="index.html#veure" class="nav__mobile-link" data-i18n="nav.gallery">Entorn</a>
         <a href="index.html#contacte" class="nav__mobile-link" data-i18n="nav.contact">Contacte</a>
       </div>
     </header>
@@ -234,7 +234,7 @@
               </div>
               <div class="booking__map">
                 <iframe
-                  src="https://maps.google.com/maps?q=Passeig+Rebuscall+13+Les+Planes+d'Hostoles&output=embed"
+                  src="https://www.google.com/maps?cid=10727855215253588900&output=embed"
                   width="100%"
                   height="240"
                   style="border: 0; border-radius: 8px"
@@ -245,43 +245,56 @@
                 ></iframe>
               </div>
             </div>
+            <!-- ============================================================
+                 Quan s'activi PHP: treure 'novalidate', afegir action="php/contacte.php"
+                 i descomentar el fetch a php/contacte.php al JS.
+                 ============================================================ -->
             <form class="contact-form" id="contact-form" novalidate>
+              <!-- Honeypot (amagat per a humans) -->
+              <div style="position:absolute;left:-9999px" aria-hidden="true">
+                <input type="text" name="honeypot" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <!-- CSRF Token (ocult) -->
+              <input type="hidden" name="csrf_token" id="csrf_token" value="" />
+
               <div class="form-group">
                 <label for="name" data-i18n="contact.form.name">Nom complet</label>
-                <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.name_placeholder" placeholder="El teu nom" required />
+                <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.name_placeholder"
+                  placeholder="El teu nom" required />
               </div>
+
               <div class="form-group">
                 <label for="email" data-i18n="contact.form.email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  data-i18n-placeholder="contact.form.email_placeholder"
-                  placeholder="tu@email.com"
-                  required
-                />
+                <input type="email" id="email" name="email" data-i18n-placeholder="contact.form.email_placeholder"
+                  placeholder="tu@email.com" required />
               </div>
+
               <div class="form-group">
-                <label for="dates" data-i18n="contact.form.dates">Dates desitjades</label>
-                <input
-                  type="text"
-                  id="dates"
-                  name="dates"
-                  data-i18n-placeholder="contact.form.dates_placeholder"
-                  placeholder="Ex: 15-20 agost 2026"
-                />
+              <label for="phone" data-i18n="contact.form.phone">Telèfon de contacte</label>
+              <input type="tel" id="phone" name="phone" pattern="[+\d\s\-]{6,20}"
+                data-i18n-placeholder="contact.form.phone_placeholder"
+                placeholder="+34 600 000 000"
+                oninput="this.value=this.value.replace(/[^+\d\s\-]/g,'')" />
               </div>
+
               <div class="form-group">
                 <label for="message" data-i18n="contact.form.message">Missatge</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  data-i18n-placeholder="contact.form.message_placeholder"
-                  placeholder="Explica'ns què necessites..."
-                  rows="4"
-                  required
-                ></textarea>
+                <textarea id="message" name="message" data-i18n-placeholder="contact.form.message_placeholder"
+                  placeholder="Explica'ns què necessites..." rows="4" required></textarea>
               </div>
+
+              <!-- Google reCAPTCHA v3 (Invisible) -->
+              <input type="hidden" id="recaptcha_response" name="recaptcha_response" value="" />
+
+              <!-- Checkbox Privacitat -->
+              <div class="form-checkbox">
+                <input type="checkbox" id="privacy" name="privacy" class="form-checkbox__input" required />
+                <label for="privacy" class="form-checkbox__label" data-i18n="contact.form.privacy">
+                  He llegit i accepto la <a href="#">política de privacitat</a>.
+                </label>
+              </div>
+
               <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Enviar consulta</button>
             </form>
           </div>
@@ -504,21 +517,28 @@
             <div class="footer__nav-col">
               <a href="index.html" class="footer__link">Inici</a>
               <a href="habitacions.html" class="footer__link">Habitacions</a>
-              <a href="index.html#galeria" class="footer__link" data-i18n="nav.gallery">Entorn</a>
+              <a href="index.html#veure" class="footer__link" data-i18n="nav.gallery">Entorn</a>
             </div>
           </nav>
         </div>
         <div class="footer__bottom">
           <p class="footer__copy">&copy; 2026 Palmito House. Tots els drets reservats.</p>
-          <p class="footer__copy">Dissenyat per <a href="https://vorastudio.com" target="_blank">Vora Studio</a></p>
+          <p class="footer__copy">Dissenyat per <a href="https://vorastudio.com" class="footer__vora" target="_blank" rel="noopener" aria-label="Vora Studio"></a></p>
         </div>
       </div>
     </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-hidden" role="alert" aria-live="polite"></div>
 
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcUQfUsAAAAAGVzW0flx_A2AbuIA2mQfRu9QGdU"></script>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-hidden" role="alert" aria-live="polite"></div>
     <script>
       // ==================== LENIS ====================
 
@@ -1404,6 +1424,137 @@
           if (e.key === "ArrowLeft") navigateVeure(-1);
           if (e.key === "ArrowRight") navigateVeure(1);
         });
+      }
+
+      // ==================== FORMULARI DE CONTACTE ====================
+      /* ==================================================================
+         Quan s'activi PHP: treure 'novalidate' del <form>, posar
+         action="php/contacte.php", i descomentar el fetch() a enviarFormulari
+         ================================================================== */
+
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) {
+        const csrfInput = document.getElementById("csrf_token");
+        if (csrfInput) {
+          const csrfSecret = "dev_secret_12345";
+          const today = new Date().toISOString().split("T")[0];
+          csrfInput.value = btoa(today + ":" + csrfSecret);
+        }
+
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          // Validar checkbox de privacitat
+          const privacyCheck = document.getElementById("privacy");
+          const privacyWrapper = privacyCheck?.closest(".form-checkbox");
+          if (!privacyCheck || !privacyCheck.checked) {
+            if (privacyWrapper) privacyWrapper.classList.add("form-checkbox--error");
+            mostrarToast("Has d'acceptar la política de privacitat.", "error");
+            return;
+          }
+          if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
+
+          if (privacyCheck) {
+            privacyCheck.addEventListener("change", () => {
+              if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
+            }, { once: true });
+          }
+
+          // Validar email
+          const emailInput = document.getElementById("email");
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailInput || !emailRegex.test(emailInput.value)) {
+            mostrarToast("Introdueix un email vàlid.", "error");
+            emailInput?.focus();
+            return;
+          }
+
+          // Validar telèfon (si està omplert)
+          const phoneInput = document.getElementById("phone");
+          if (phoneInput && phoneInput.value.trim()) {
+            const phoneClean = phoneInput.value.replace(/[\s\-]/g, "");
+            if (!/^\+?\d{6,15}$/.test(phoneClean)) {
+              mostrarToast("Introdueix un telèfon vàlid (només números i +).", "error");
+              phoneInput.focus();
+              return;
+            }
+          }
+
+          const btn = contactForm.querySelector(".btn--primary");
+          const originalText = btn.textContent;
+          btn.textContent = "Enviant...";
+          btn.disabled = true;
+
+          if (typeof grecaptcha !== "undefined") {
+            grecaptcha.ready(() => {
+              grecaptcha.execute("6LcUQfUsAAAAAGVzW0flx_A2AbuIA2mQfRu9QGdU", { action: "submit" }).then((token) => {
+                enviarFormulari(token, originalText, btn);
+              });
+            });
+          } else {
+            enviarFormulari("test-token", originalText, btn);
+          }
+        });
+      }
+
+      async function enviarFormulari(token, originalText, btn) {
+        const recaptchaInput = document.getElementById("recaptcha_response");
+        if (recaptchaInput) recaptchaInput.value = token;
+
+        const data = new FormData(document.getElementById("contact-form"));
+
+        /* ================================================================
+           ENVIAMENT AJAX A PHP (COMENTAT — Activar quan el PHP estigui online)
+           // try {
+           //   const response = await fetch("php/contacte.php", {
+           //     method: "POST",
+           //     body: data,
+           //     headers: { Accept: "application/json" },
+           //   });
+           //   const result = await response.json();
+           //
+           //   if (response.ok && result.ok) {
+           //     mostrarToast(result.message || "Missatge enviat correctament!", "success");
+           //     document.getElementById("contact-form").reset();
+           //   } else {
+           //     mostrarToast(result.error || "Hi ha hagut un problema.", "error");
+           //   }
+           // } catch (error) {
+           //   mostrarToast("Error de connexió. Intenta-ho més tard.", "error");
+           // }
+           ================================================================ */
+
+        // MOCK (mentre el PHP no està actiu)
+        await new Promise((r) => setTimeout(r, 1200));
+        mostrarToast("Missatge rebut! Et respondrem en breu.", "success");
+        document.getElementById("contact-form").reset();
+
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+
+      // ==================== TOAST ====================
+
+      function mostrarToast(mensaje, tipo) {
+        const toast = document.getElementById("toast-container");
+        if (!toast) return;
+
+        toast.textContent = mensaje;
+        toast.className = "toast-visible toast-" + tipo;
+
+        const tlToast = gsap.timeline();
+
+        tlToast
+          .fromTo(toast, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" })
+          .to(toast, {
+            opacity: 0,
+            y: -10,
+            delay: 4,
+            duration: 0.4,
+            onComplete: () => {
+              toast.className = "toast-hidden";
+            },
+          });
       }
     </script>
   </body>

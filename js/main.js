@@ -302,12 +302,7 @@ const i18n = {
     "attractions.attraction5.desc": "Cales d'aigües turquesa",
     "reviews.label": "Comentaris",
     "reviews.title": "El que diuen<br /><em>els nostres hostes</em>",
-    "reviews.review1.text":
-      "La casa és espaiosa, còmoda, neta i gran, la piscina és fantàstica i la zona de barbacoa és un lloc brillant per cuinar menjar local. Hi ha unes cascades precioses just darrere de la casa, a uns 20 minuts a peu. Vam llogar un cotxe i vam conduir per algunes de les zones fantàstiques d'Espanya, fins a Barcelona per un dia, una vetllada a Girona i una conducció fora d'aquest món cap al nord, a les muntanyes dels Pirineus. Recomanem aquesta casa a qualsevol hoste potencial.",
-    "reviews.review2.text":
-      "Una casa magnífica, espaiosa i neta. Situada al cor de les muntanyes, de cascades, d'antics volcans i a la sortida d'un encantador petit poble, té tot el necessari per agradar. Estada inoblidable.",
-    "reviews.review3.text":
-      "Vam gaudir de les boniques vistes des del jardí del darrere de la casa, mirant cap als turons verds i boscosos. Les piscines i cascades de la zona eren genials per banyar-se, i la piscina de la casa era superb. La zona és interessant i bonica. La casa és un lloc preciós per passar el temps relaxant-se.",
+    "reviews.cta": "Veure totes les ressenyes a Google",
     "contact.label": "Fes el primer pas",
     "contact.title": "Reserva la teva<br /><em>experiència</em>",
     "contact.lead":
@@ -320,11 +315,12 @@ const i18n = {
     "contact.form.name_placeholder": "El teu nom",
     "contact.form.email": "Email",
     "contact.form.email_placeholder": "tu@email.com",
-    "contact.form.dates": "Dates desitjades",
-    "contact.form.dates_placeholder": "Ex: 15-20 agost 2026",
+    "contact.form.phone": "Telèfon de contacte",
+    "contact.form.phone_placeholder": "+34 600 000 000",
     "contact.form.message": "Missatge",
     "contact.form.message_placeholder": "Explica'ns què necessites...",
     "contact.form.submit": "Enviar consulta",
+    "contact.form.privacy": "He llegit i accepto la <a href='#'>política de privacitat</a>.",
     "footer.text": "On l'exclusivitat troba la seva essència natural. La teva llar lluny de casa, al cor de la Garrotxa.",
     "footer.copy": "© 2026 Palmito House. Tots els drets reservats.",
     "footer.design": "Dissenyat per Vora Studio",
@@ -439,12 +435,7 @@ const i18n = {
     "attractions.attraction5.desc": "Calas de aguas turquesa",
     "reviews.label": "Comentarios",
     "reviews.title": "Lo que dicen<br /><em>nuestros huéspedes</em>",
-    "reviews.review1.text":
-      "La casa es amplia, cómoda, limpia y grande, la piscina es fantástica y la zona de barbacoa es un lugar brillante para cocinar comida local. Hay unas cascadas preciosas justo detrás de la casa, a unos 20 minutos a pie. Tuvimos un coche de alquiler y condujimos por algunas de las zonas fantásticas de España, hasta Barcelona por un día, una velada en Girona y una conducción fuera de este mundo hacia el norte, a las montañas de los Pirineos. Recomendamos esta casa a cualquier huésped potencial.",
-    "reviews.review2.text":
-      "Una casa magnífica, espaciosa y limpia. Situada en el corazón de las montañas, de cascadas, de antiguos volcanes y a la salida de un encantador pequeño pueblo, tiene todo lo necesario para gustar. Estancia inolvidable.",
-    "reviews.review3.text":
-      "Disfrutamos de las hermosas vistas desde el jardín trasero de la casa, mirando hacia las colinas verdes y boscosas. Las piscinas y cascadas de la zona eran geniales para bañarse, y la piscina de la casa era superb. La zona es interesante y bonita. La casa es un lugar precioso para pasar el tiempo relajándose.",
+    "reviews.cta": "Ver todas las reseñas en Google",
     "contact.label": "Da el primer paso",
     "contact.title": "Reserva tu<br /><em>experiencia</em>",
     "contact.lead":
@@ -457,11 +448,12 @@ const i18n = {
     "contact.form.name_placeholder": "Tu nombre",
     "contact.form.email": "Email",
     "contact.form.email_placeholder": "tu@email.com",
-    "contact.form.dates": "Fechas deseadas",
-    "contact.form.dates_placeholder": "Ej: 15-20 agosto 2026",
+    "contact.form.phone": "Teléfono de contacto",
+    "contact.form.phone_placeholder": "+34 600 000 000",
     "contact.form.message": "Mensaje",
     "contact.form.message_placeholder": "Cuéntanos qué necesitas...",
     "contact.form.submit": "Enviar consulta",
+    "contact.form.privacy": "He leído y acepto la <a href='#'>política de privacidad</a>.",
     "footer.text": "Donde la exclusividad encuentra su esencia natural. Tu hogar lejos de casa, en el corazón de la Garrotxa.",
     "footer.copy": "© 2026 Palmito House. Todos los derechos reservados.",
     "footer.design": "Diseñado por Vora Studio",
@@ -576,12 +568,7 @@ const i18n = {
     "attractions.attraction5.desc": "Turquoise coves and beaches",
     "reviews.label": "Reviews",
     "reviews.title": "What our<br /><em>guests say</em>",
-    "reviews.review1.text":
-      "The house is roomy, comfortable, clean and big, the pool is fantastic, and the BBQ area is a brilliant place to cook local food. There are some gorgeous waterfalls just behind the house, about a 20 minute walk away. We had a hire car and drove around some of the fantastic areas of Spain, into Barcelona for a day, an evening in Girona and an out of this world drive north to the Pyrenees's mountains. We would recommend this house to any potential guest.",
-    "reviews.review2.text":
-      "A magnificent, spacious and clean house. Located in the heart of the mountains, of waterfalls, of ancient volcanoes and at the exit of a charming little village, it has everything to please. Unforgettable stay.",
-    "reviews.review3.text":
-      "We enjoyed the beautiful views from the garden at the back of the house, looking towards green forested hills. The pools and waterfalls in the area were great for swimming, and the swimming pool at the house was superb. The area is interesting and beautiful. The house is a gorgeous place to spend time relaxing.",
+    "reviews.cta": "See all reviews on Google",
     "contact.label": "Take the first step",
     "contact.title": "Book your<br /><em>experience</em>",
     "contact.lead": "We are here to help you plan your ideal getaway. Contact us for fully personalized attention and exclusive details.",
@@ -593,11 +580,12 @@ const i18n = {
     "contact.form.name_placeholder": "Your name",
     "contact.form.email": "Email",
     "contact.form.email_placeholder": "you@email.com",
-    "contact.form.dates": "Desired dates",
-    "contact.form.dates_placeholder": "E.g.: Aug 15-20, 2026",
+    "contact.form.phone": "Contact phone",
+    "contact.form.phone_placeholder": "+34 600 000 000",
     "contact.form.message": "Message",
     "contact.form.message_placeholder": "Tell us what you need...",
     "contact.form.submit": "Send inquiry",
+    "contact.form.privacy": "I have read and accept the <a href='#'>privacy policy</a>.",
     "footer.text": "Where exclusivity meets its natural essence. Your home away from home, in the heart of Garrotxa.",
     "footer.copy": "© 2026 Palmito House. All rights reserved.",
     "footer.design": "Designed by Vora Studio",
@@ -1650,30 +1638,6 @@ gsap.from(".gallery__item", {
   },
 });
 
-const contactForm = document.getElementById("contact-form");
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(contactForm);
-  const data = Object.fromEntries(formData.entries());
-
-  console.log("Formulari enviat:", data);
-
-  gsap.to(contactForm, {
-    autoAlpha: 0.5,
-    duration: 0.2,
-    onComplete: () => {
-      gsap.to(contactForm, {
-        autoAlpha: 1,
-        duration: 0.2,
-      });
-    },
-  });
-
-  contactForm.reset();
-});
-
 // Slider de la secció "Sobre la casa" amb desplaçament lateral interior (Parallax)
 const initCasaSlider = () => {
   const slides = document.querySelectorAll(".casa__slide");
@@ -1755,9 +1719,243 @@ const initCasaSlider = () => {
   }, 5000); // Canvi automàtic cada 5 segons
 };
 
-// Executar inicialitzador quan el DOM estigui a punt
+// ==================== REVIEWS CAROUSEL ====================
+
+function initReviewsCarousel() {
+  const track = document.querySelector(".reviews__track");
+  const dotsContainer = document.querySelector(".reviews__dots");
+  if (!track || !dotsContainer) return;
+
+  const cards = track.querySelectorAll(".review-card");
+  if (cards.length < 4) return;
+
+  const mq = window.matchMedia("(max-width: 767px)");
+  let current = 0;
+  let interval = null;
+  let views = 0;
+  let step = 0;
+
+  function cardsPerView() {
+    return mq.matches ? 1 : 3;
+  }
+
+  function calcViews() {
+    views = cards.length - (cardsPerView() - 1);
+  }
+
+  function calcStep() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 16;
+    step = cards[0].getBoundingClientRect().width + gap;
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = "";
+    for (let i = 0; i < views; i++) {
+      const dot = document.createElement("button");
+      dot.className = "reviews__dot" + (i === 0 ? " reviews__dot--active" : "");
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-label", "Vista " + (i + 1));
+      dot.addEventListener("click", () => goTo(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goTo(index) {
+    if (index === current) return;
+    current = index;
+
+    dotsContainer.querySelectorAll(".reviews__dot").forEach((d, i) => {
+      d.classList.toggle("reviews__dot--active", i === current);
+    });
+
+    gsap.to(track, {
+      x: -(current * step),
+      duration: 0.6,
+      ease: "power3.inOut",
+    });
+
+    resetInterval();
+  }
+
+  function next() {
+    goTo((current + 1) % views);
+  }
+
+  function resetInterval() {
+    if (interval) clearInterval(interval);
+    interval = setInterval(next, 5000);
+  }
+
+  function onResize() {
+    calcViews();
+    calcStep();
+    if (current >= views) current = 0;
+    buildDots();
+    gsap.set(track, { x: -(current * step) });
+  }
+
+  mq.addEventListener("change", onResize);
+  window.addEventListener("resize", calcStep);
+
+  calcViews();
+  calcStep();
+  buildDots();
+  resetInterval();
+}
+
+// ==================== FORMULARI DE CONTACTE (AMAGAT / PREPARAT) ====================
+/* ==========================================================================
+   Quan s'activi PHP:
+   1. Treure 'novalidate' del <form> a l'HTML
+   2. Afegir action="php/contacte.php" al <form>
+   3. Descomentar el fetch() a enviarFormulari()
+   ========================================================================== */
+
+function initContactForm() {
+  const contactForm = document.getElementById("contact-form");
+  if (!contactForm) return;
+
+  // Inserir CSRF token
+  const csrfInput = document.getElementById("csrf_token");
+  if (csrfInput) {
+    // Token basat en data (stateless, validat al PHP)
+    const csrfSecret = "dev_secret_12345";
+    const today = new Date().toISOString().split("T")[0];
+    // Simulem HMAC (al PHP es fa amb hash_hmac real)
+    csrfInput.value = btoa(today + ":" + csrfSecret);
+  }
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Validar checkbox de privacitat
+    const privacyCheck = document.getElementById("privacy");
+    const privacyWrapper = privacyCheck?.closest(".form-checkbox");
+    if (!privacyCheck || !privacyCheck.checked) {
+      if (privacyWrapper) privacyWrapper.classList.add("form-checkbox--error");
+      mostrarToast("Has d'acceptar la política de privacitat.", "error");
+      return;
+    }
+    if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
+
+    if (privacyCheck) {
+      privacyCheck.addEventListener("change", () => {
+        if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
+      }, { once: true });
+    }
+
+    // Validar email
+    const emailInput = document.getElementById("email");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailInput || !emailRegex.test(emailInput.value)) {
+      mostrarToast("Introdueix un email vàlid.", "error");
+      emailInput?.focus();
+      return;
+    }
+
+    // Validar telèfon (si està omplert, només dígits, +, espais, guions)
+    const phoneInput = document.getElementById("phone");
+    if (phoneInput && phoneInput.value.trim()) {
+      const phoneClean = phoneInput.value.replace(/[\s\-]/g, "");
+      if (!/^\+?\d{6,15}$/.test(phoneClean)) {
+        mostrarToast("Introdueix un telèfon vàlid (només números i +).", "error");
+        phoneInput.focus();
+        return;
+      }
+    }
+
+    const btn = contactForm.querySelector(".btn--primary");
+    const originalText = btn.textContent;
+    btn.textContent = "Enviant...";
+    btn.disabled = true;
+
+    /* =====================================================================
+       reCAPTCHA v3 (Invisible)
+       ===================================================================== */
+    if (typeof grecaptcha !== "undefined") {
+      grecaptcha.ready(() => {
+        const siteKey = "6LcUQfUsAAAAAGVzW0flx_A2AbuIA2mQfRu9QGdU";
+        grecaptcha.execute(siteKey, { action: "submit" }).then((token) => {
+          enviarFormulari(token, originalText, btn);
+        });
+      });
+    } else {
+      // Fallback si reCAPTCHA no carrega (mode test)
+      enviarFormulari("test-token", originalText, btn);
+    }
+  });
+}
+
+async function enviarFormulari(token, originalText, btn) {
+  const recaptchaInput = document.getElementById("recaptcha_response");
+  if (recaptchaInput) recaptchaInput.value = token;
+
+  const data = new FormData(document.getElementById("contact-form"));
+
+  /* ====================================================================
+     ENVIAMENT AJAX A PHP (COMENTAT — Activar quan el PHP estigui online)
+     // try {
+     //   const response = await fetch("php/contacte.php", {
+     //     method: "POST",
+     //     body: data,
+     //     headers: { Accept: "application/json" },
+     //   });
+     //   const result = await response.json();
+     //
+     //   if (response.ok && result.ok) {
+     //     mostrarToast(result.message || "Missatge enviat correctament!", "success");
+     //     document.getElementById("contact-form").reset();
+     //   } else {
+     //     mostrarToast(result.error || "Hi ha hagut un problema.", "error");
+     //   }
+     // } catch (error) {
+     //   mostrarToast("Error de connexió. Intenta-ho més tard.", "error");
+     // }
+     ==================================================================== */
+
+  // === MOCK (mentre el PHP no està actiu) ===
+  await new Promise((r) => setTimeout(r, 1200));
+  mostrarToast("Missatge rebut! Et respondrem en breu.", "success");
+  document.getElementById("contact-form").reset();
+  // === FI MOCK ===
+
+  // Restaurar UI
+  btn.textContent = originalText;
+  btn.disabled = false;
+}
+
+// ==================== TOAST ====================
+
+function mostrarToast(mensaje, tipo) {
+  const toast = document.getElementById("toast-container");
+  if (!toast) return;
+
+  toast.textContent = mensaje;
+  toast.className = "toast-visible toast-" + tipo;
+
+  const tlToast = gsap.timeline();
+
+  tlToast
+    .fromTo(toast, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" })
+    .to(toast, {
+      opacity: 0,
+      y: -10,
+      delay: 4,
+      duration: 0.4,
+      onComplete: () => {
+        toast.className = "toast-hidden";
+      },
+    });
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initCasaSlider);
+  document.addEventListener("DOMContentLoaded", () => {
+    initCasaSlider();
+    initReviewsCarousel();
+    initContactForm();
+  });
 } else {
   initCasaSlider();
+  initReviewsCarousel();
+  initContactForm();
 }
