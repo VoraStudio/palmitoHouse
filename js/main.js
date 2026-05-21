@@ -198,6 +198,7 @@ const i18n = {
     "nav.services": "Serveis",
     "nav.activities": "Activitats",
     "nav.attractions": "Atraccions",
+    "nav.gallery": "Entorn",
     "nav.reviews": "Comentaris",
     "nav.contact": "Contacte",
     "nav.book": "Reservar",
@@ -334,6 +335,7 @@ const i18n = {
     "nav.services": "Servicios",
     "nav.activities": "Actividades",
     "nav.attractions": "Atracciones",
+    "nav.gallery": "Entorno",
     "nav.reviews": "Comentarios",
     "nav.contact": "Contacto",
     "nav.book": "Reservar",
@@ -470,6 +472,7 @@ const i18n = {
     "nav.services": "Services",
     "nav.activities": "Activities",
     "nav.attractions": "Attractions",
+    "nav.gallery": "Surroundings",
     "nav.reviews": "Reviews",
     "nav.contact": "Contact",
     "nav.book": "Book now",
@@ -892,7 +895,7 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
     .to(
       ".hero__word--house",
       {
-        x: "-75vw",
+        x: "-71vw",
         y: "-22vh",
         scale: 0.5,
         color: "#ffffff",
