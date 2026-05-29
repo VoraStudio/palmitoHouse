@@ -261,7 +261,7 @@ const i18n = {
     "services.service11.text": "Espai tranquil per treballar o llegir",
     "services.service12.title": "WiFi",
     "services.service12.text": "Connexió d'alta velocitat a tota la finca",
-    "activities.label": "Explora l'Entorn",
+    "activities.label": "Activitats per fer",
     "activities.title": "Descobreix el que<br /><em>la Garrotxa té per a tu</em>",
     "activities.lead":
       "Des de l'adrenalina del parapent fins a la calma dels banys al riu, seleccionem les millors experiències perquè connectis amb la terra i amb tu mateix.",
@@ -294,6 +294,8 @@ const i18n = {
     "veure.card5.desc": "Paratge volcànic i boscos de somni",
     "veure.card6.title": "Costa Brava",
     "veure.card6.desc": "Cales d'aigües turquesa i pobles mariners",
+    "veure.label": "Explora l'Entorn",
+    "veure.title": "Descobreix el que el<br /><em>Gironès té per a tu</em>",
     "attractions.label": "Atraccions turístiques",
     "attractions.title": "Alrededores<br /><em>per descobrir</em>",
     "attractions.attraction1.title": "Alrededores",
@@ -394,7 +396,7 @@ const i18n = {
     "services.service11.text": "Espacio tranquilo para trabajar o leer",
     "services.service12.title": "WiFi",
     "services.service12.text": "Conexión de alta velocidad en toda la finca",
-    "activities.label": "Explora el Entorno",
+    "activities.label": "Actividades para hacer",
     "activities.title": "Descubre lo que<br /><em>la Garrotxa tiene para ti</em>",
     "activities.lead":
       "Desde la adrenalina del paracaidismo hasta la calma de los baños en el río, seleccionamos las mejores experiencias para que conectes con la tierra y contigo mismo.",
@@ -427,6 +429,8 @@ const i18n = {
     "veure.card5.desc": "Paisaje volcánico y bosques de ensueño",
     "veure.card6.title": "Costa Brava",
     "veure.card6.desc": "Calas de aguas turquesa y pueblos marineros",
+    "veure.label": "Explora el Entorno",
+    "veure.title": "Descubre lo que el<br /><em>Gironès tiene para ti</em>",
     "attractions.label": "Atracciones turísticas",
     "attractions.title": "Alrededores<br /><em>por descubrir</em>",
     "attractions.attraction1.title": "Alrededores",
@@ -527,7 +531,7 @@ const i18n = {
     "services.service11.text": "Quiet space to work or read",
     "services.service12.title": "WiFi",
     "services.service12.text": "High-speed connection throughout the property",
-    "activities.label": "Explore the Area",
+    "activities.label": "Things to do",
     "activities.title": "Discover what<br /><em>Garrotxa has for you</em>",
     "activities.lead":
       "From the adrenaline of paragliding to the calm of river bathing, we select the best experiences for you to connect with the land and yourself.",
@@ -560,6 +564,8 @@ const i18n = {
     "veure.card5.desc": "Volcanic landscape and dreamlike forests",
     "veure.card6.title": "Costa Brava",
     "veure.card6.desc": "Turquoise coves and seaside villages",
+    "veure.label": "Explore the Area",
+    "veure.title": "Discover what<br /><em>Gironès has for you</em>",
     "attractions.label": "Tourist attractions",
     "attractions.title": "Surroundings<br /><em>to discover</em>",
     "attractions.attraction1.title": "Surroundings",
@@ -859,10 +865,13 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
     .to(
       ".hero__inline-image",
       {
-        width: "120vw",
-        height: "70vh",
+        width: "100vw",
+        height: "80vh",
         borderRadius: 0,
         duration: 2,
+        x: "-5vw",
+        y: 0,
+        margin: 0,
         ease: "power3.inOut",
       },
       ">",
@@ -870,8 +879,8 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
     .to(
       ".hero__word--palmito",
       {
-        x: "65vw",
-        y: "-22vh",
+        x: "25.5vw",
+        y: "22vh",
         scale: 0.5,
         color: "#ffffff",
         textShadow: "0 10px 40px rgba(0, 0, 0, 0.65), 0 3px 12px rgba(0, 0, 0, 0.4)",
@@ -883,8 +892,8 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
     .to(
       ".hero__word--house",
       {
-        x: "-71vw",
-        y: "-22vh",
+        x: "-91vw",
+        y: "22vh",
         scale: 0.5,
         color: "#ffffff",
         textShadow: "0 10px 40px rgba(0, 0, 0, 0.65), 0 3px 12px rgba(0, 0, 0, 0.4)",
@@ -1839,9 +1848,13 @@ function initContactForm() {
     if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
 
     if (privacyCheck) {
-      privacyCheck.addEventListener("change", () => {
-        if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
-      }, { once: true });
+      privacyCheck.addEventListener(
+        "change",
+        () => {
+          if (privacyWrapper) privacyWrapper.classList.remove("form-checkbox--error");
+        },
+        { once: true },
+      );
     }
 
     // Validar email
@@ -1935,17 +1948,15 @@ function mostrarToast(mensaje, tipo) {
 
   const tlToast = gsap.timeline();
 
-  tlToast
-    .fromTo(toast, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" })
-    .to(toast, {
-      opacity: 0,
-      y: -10,
-      delay: 4,
-      duration: 0.4,
-      onComplete: () => {
-        toast.className = "toast-hidden";
-      },
-    });
+  tlToast.fromTo(toast, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }).to(toast, {
+    opacity: 0,
+    y: -10,
+    delay: 4,
+    duration: 0.4,
+    onComplete: () => {
+      toast.className = "toast-hidden";
+    },
+  });
 }
 
 if (document.readyState === "loading") {
