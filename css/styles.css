@@ -40,7 +40,7 @@
   --z-sticky: 200;
   --z-overlay: 300;
   --z-modal: 900;
-  --header-height: 60px;
+  --header-height: 70px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,7 +175,7 @@ button {
   padding: 0 var(--spacing-lg);
   max-width: 1440px;
   margin: 0 auto;
-  height: 60px;
+  height: 70px;
 }
 
 @media (min-width: 768px) {
@@ -240,12 +240,10 @@ button {
   align-items: flex-start;
   text-decoration: none;
   padding: 0;
-  /* border: solid black 1px; */
-  overflow: hidden;
 }
 
 .header__logo img {
-  height: 120px;
+  height: 70px;
   width: auto;
 }
 
@@ -691,7 +689,6 @@ button {
   font-size: clamp(4rem, calc(18vw + 1.5rem), 15.5rem);
   font-weight: 400;
   color: var(--color-text-primary);
-  will-change: transform;
   position: relative;
   z-index: 2; /* Para que quede por encima de la imagen al juntarse */
 }
@@ -701,7 +698,6 @@ button {
   height: clamp(90px, 12vw, 120px);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  will-change: width, clip-path;
   flex-shrink: 0;
   position: relative;
 }
@@ -729,9 +725,9 @@ button {
 
 .hero__bottom-text {
   font-family: var(--font-body);
-  color: var(--color-text-light);
+  color: #fff;
   margin: 0;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 .hero__bottom-text--left {
@@ -775,7 +771,6 @@ button {
 .hero__text-reveal-inner {
   display: inline-block;
   transform: translateY(100%);
-  will-change: transform;
 }
 
 .hero__cta {
@@ -942,7 +937,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  will-change: transform;
 }
 
 .casa__content {

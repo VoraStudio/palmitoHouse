@@ -304,7 +304,19 @@ const i18n = {
     "attractions.attraction5.desc": "Cales d'aigües turquesa",
     "reviews.label": "Comentaris",
     "reviews.title": "El que diuen<br /><em>els nostres hostes</em>",
-    "reviews.cta": "Veure totes les ressenyes a Google",
+    "reviews.cta": "Veure totes les ressenyes",
+    "reviews.review1.name": "Toni",
+    "reviews.review1.text": "\"La casa és igual que a les fotos, molt bonica, ordenat tot i net. Hem passat uns dies increïbles tot i que per a les nostres dates plogués tots els dies. Molt content amb la casa. Per passar temps amb família o amics és genial, sense soroll. Ideal per descansar i relaxar-se. Recomano 100%.\"",
+    "reviews.review2.name": "Sergio",
+    "reviews.review2.text": "\"Increïble casa, amb un preciós jardí, piscina i també a prop de llocs per fer senderisme. Recomanat\"",
+    "reviews.review3.name": "Auriane",
+    "reviews.review3.text": "\"Vam passar unes vacances meravelloses en un entorn preciós! Les botigues a peu i Girona a 40 minuts són un veritable avantatge per a la casa. Ho recomanem\"",
+    "reviews.review4.name": "Edith",
+    "reviews.review4.text": "\"Tot espectacular. Un jardí preciós i unes vistes increïbles.\"",
+    "reviews.review5.name": "Daan",
+    "reviews.review5.text": "\"Una preciosa vila amb una bonica piscina i zona a l'aire lliure on es pot menjar a l'aire lliure amb bona companyia\"",
+    "reviews.review6.name": "Ali",
+    "reviews.review6.text": "\"Vam passar una estada agradable, els nens van gaudir de la piscina. Bon moment\"",
     "contact.label": "Fes el primer pas",
     "contact.title": "Reserva la teva<br /><em>experiència</em>",
     "contact.lead":
@@ -439,7 +451,19 @@ const i18n = {
     "attractions.attraction5.desc": "Calas de aguas turquesa",
     "reviews.label": "Comentarios",
     "reviews.title": "Lo que dicen<br /><em>nuestros huéspedes</em>",
-    "reviews.cta": "Ver todas las reseñas en Google",
+    "reviews.cta": "Ver todas las reseñas",
+    "reviews.review1.name": "Toni",
+    "reviews.review1.text": "\"La casa es igual que en las fotos, muy bonito, ordenado todo y limpio. Hemos pasado unos días increíbles a pesar de que para nuestras fechas lloviera todos los días. Muy contento con la casa. Para pasar tiempo con familia o amigos es genial, sin ruido. Ideal para descansar y relajar. Recomiendo 100%.\"",
+    "reviews.review2.name": "Sergio",
+    "reviews.review2.text": "\"Increíble casa, con un precioso jardín, piscina y también cerca de lugares para hacer senderismo. Recomendado\"",
+    "reviews.review3.name": "Auriane",
+    "reviews.review3.text": "\"¡Pasamos unas vacaciones maravillosas en un entorno precioso! Las tiendas a pie y Gerona a 40 minutos son una verdadera ventaja para la casa. Lo recomendamos\"",
+    "reviews.review4.name": "Edith",
+    "reviews.review4.text": "\"Todo espectacular. Un jardín precioso y unas vistas increíbles.\"",
+    "reviews.review5.name": "Daan",
+    "reviews.review5.text": "\"Una hermosa villa con una hermosa piscina y zona al aire libre donde se puede comer al aire libre con una buena compañía\"",
+    "reviews.review6.name": "Ali",
+    "reviews.review6.text": "\"Pasamos una estancia agradable, los niños disfrutaron de la piscina. Gran momento\"",
     "contact.label": "Da el primer paso",
     "contact.title": "Reserva tu<br /><em>experiencia</em>",
     "contact.lead":
@@ -574,7 +598,19 @@ const i18n = {
     "attractions.attraction5.desc": "Turquoise coves and beaches",
     "reviews.label": "Reviews",
     "reviews.title": "What our<br /><em>guests say</em>",
-    "reviews.cta": "See all reviews on Google",
+    "reviews.cta": "See all reviews",
+    "reviews.review1.name": "Toni",
+    "reviews.review1.text": "\"The house is just like in the photos, very nice, tidy and clean. We had an incredible stay even though it rained every day during our dates. Very happy with the house. Great for spending time with family or friends, no noise. Ideal for resting and relaxing. 100% recommended.\"",
+    "reviews.review2.name": "Sergio",
+    "reviews.review2.text": "\"Incredible house, with a beautiful garden, pool and also close to hiking spots. Recommended\"",
+    "reviews.review3.name": "Auriane",
+    "reviews.review3.text": "\"We had wonderful holidays in a beautiful setting! Shops within walking distance and Girona 40 minutes away are a real advantage for the house. We recommend it\"",
+    "reviews.review4.name": "Edith",
+    "reviews.review4.text": "\"Everything spectacular. A beautiful garden and incredible views.\"",
+    "reviews.review5.name": "Daan",
+    "reviews.review5.text": "\"A beautiful villa with a lovely pool and outdoor area where you can dine al fresco with good company\"",
+    "reviews.review6.name": "Ali",
+    "reviews.review6.text": "\"We had a pleasant stay, the children enjoyed the pool. Great time\"",
     "contact.label": "Take the first step",
     "contact.title": "Book your<br /><em>experience</em>",
     "contact.lead": "We are here to help you plan your ideal getaway. Contact us for fully personalized attention and exclusive details.",
@@ -883,7 +919,7 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
         y: "22vh",
         scale: 0.5,
         color: "#ffffff",
-        textShadow: "0 10px 40px rgba(0, 0, 0, 0.65), 0 3px 12px rgba(0, 0, 0, 0.4)",
+        textShadow: "0 2px 8px rgba(0, 0, 0, 0.4)",
         duration: 2,
         ease: "power3.inOut",
       },
@@ -896,7 +932,7 @@ gsap.matchMedia().add("(min-width: 768px)", () => {
         y: "22vh",
         scale: 0.5,
         color: "#ffffff",
-        textShadow: "0 10px 40px rgba(0, 0, 0, 0.65), 0 3px 12px rgba(0, 0, 0, 0.4)",
+        textShadow: "0 2px 8px rgba(0, 0, 0, 0.4)",
         duration: 2,
         ease: "power3.inOut",
       },
@@ -1670,7 +1706,7 @@ const initCasaSlider = () => {
 
     // Posicionem el següent slide a la dreta i la seva imatge a l'esquerra (per a l'efecte parallax)
     gsap.set(nextSlide, { xPercent: 100, autoAlpha: 1, zIndex: 2 });
-    gsap.set(nextImg, { xPercent: -30 });
+    gsap.set(nextImg, { xPercent: -10 });
     gsap.set(currentSlide, { zIndex: 1 });
 
     const tl = gsap.timeline({
@@ -1699,7 +1735,7 @@ const initCasaSlider = () => {
     tl.to(
       currentImg,
       {
-        xPercent: 30,
+        xPercent: 10,
         duration: 1.6,
         ease: "power2.inOut",
       },
@@ -1725,6 +1761,7 @@ const initCasaSlider = () => {
       },
       0,
     );
+
   }, 5000); // Canvi automàtic cada 5 segons
 };
 
@@ -1887,7 +1924,7 @@ function initContactForm() {
        ===================================================================== */
     if (typeof grecaptcha !== "undefined") {
       grecaptcha.ready(() => {
-        const siteKey = "6LcUQfUsAAAAAGVzW0flx_A2AbuIA2mQfRu9QGdU";
+        const siteKey = ""; // ← Insertar aquí la Site Key de reCAPTCHA v3
         grecaptcha.execute(siteKey, { action: "submit" }).then((token) => {
           enviarFormulari(token, originalText, btn);
         });
