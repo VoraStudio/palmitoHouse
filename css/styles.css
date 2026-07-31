@@ -242,9 +242,10 @@ button {
   padding: 0;
 }
 
-.header__logo img {
-  height: 70px;
+.header__logo svg {
+  height: clamp(36px, 6vw, 70px);
   width: auto;
+  display: block;
 }
 
 .header__right {
@@ -1237,16 +1238,15 @@ button {
   overflow: hidden;
 }
 
-.service-card__icon img {
+.service-card__icon svg {
   width: 55px;
   height: 55px;
-  object-fit: contain;
   display: block;
   transition: transform var(--transition-base);
   padding: 7px;
 }
 
-.service-card:hover .service-card__icon img {
+.service-card:hover .service-card__icon svg {
   transform: scale(1.15);
 }
 
@@ -1780,23 +1780,49 @@ button {
 
 #toast-container {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 16px 28px;
-  border-radius: 12px;
+  bottom: 32px;
+  right: 32px;
+  padding: 14px 24px;
+  border-radius: var(--radius-lg);
   font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--font-size-sm);
   z-index: 10000;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 40px rgba(26, 26, 24, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  max-width: 460px;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid transparent;
+  line-height: 1.5;
+  pointer-events: auto;
+  transition: border-color 0.3s ease;
+}
+
+.toast__icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  line-height: 1.5;
+  position: relative;
+}
+
+.toast__icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.toast__message {
+  flex: 1;
 }
 
 .toast-hidden {
@@ -1809,16 +1835,45 @@ button {
   display: flex !important;
 }
 
+/* --- Success --- */
 .toast-success {
-  background: rgba(75, 140, 60, 0.92);
-  color: #ffffff;
-  border-left: 5px solid #3a7a2e;
+  border-top-color: var(--color-green);
 }
 
+.toast-success .toast__icon {
+  background: var(--color-green);
+}
+
+.toast-success .toast__icon::before {
+  content: "";
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translate(0px, -1px);
+  top: auto;
+  left: auto;
+  position: static;
+  border-radius: 0;
+}
+
+/* --- Error --- */
 .toast-error {
-  background: rgba(200, 60, 50, 0.92);
-  color: #ffffff;
-  border-left: 5px solid #8a2018;
+  border-top-color: var(--color-accent);
+}
+
+.toast-error .toast__icon {
+  background: var(--color-accent);
+}
+
+.toast-error .toast__icon::before {
+  content: "×";
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+  position: static;
+  border-radius: 0;
 }
 
 @media (max-width: 600px) {
@@ -1827,6 +1882,7 @@ button {
     right: 20px;
     left: 20px;
     min-width: auto;
+    max-width: none;
   }
 }
 
@@ -2023,15 +2079,22 @@ button {
 }
 
 .footer__vora {
-  display: inline-block;
-  width: 55px;
-  height: 18px;
-  background: #fff;
-  opacity: 1;
-  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
   vertical-align: middle;
-  mask: url(../img/logoVora.png) no-repeat center / contain;
-  -webkit-mask: url(../img/logoVora.png) no-repeat center / contain;
+  text-decoration: none !important;
+}
+
+.footer__vora-logo {
+  display: block;
+  width: 55px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: filter var(--transition-fast);
+}
+
+.footer__vora:hover .footer__vora-logo {
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(340deg) saturate(3);
 }
 
 .footer__copy a:hover {

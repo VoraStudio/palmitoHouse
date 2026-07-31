@@ -205,6 +205,11 @@ const i18n = {
     "hero.label": "Refugi Rural Exclusiu",
     "hero.description":
       "Més que una estada, una immersió total en la calma. Gaudeix de la màxima exclusivitat en un entorn on el temps es deté i el servei personalitzat és la nostra prioritat.",
+    "hero.line1": "Escapa't.",
+    "hero.line2": "Respira.",
+    "hero.line3": "Desconnecta de veritat.",
+    "hero.line4": "Una casa exclusiva entre muntanya, natura i silenci,",
+    "hero.line5": "a pocs minuts de Girona i la Costa Brava.",
     "hero.cta_link": "Comença el teu viatge",
     "about.label": "Sobre la casa",
     "about.title": "Un refugi privat<br /><em>en plena natura</em>",
@@ -233,6 +238,8 @@ const i18n = {
     "rooms.room3.text": "Dos ambients connectats, ideal per a famílies amb nens. Capacitat per a 4 persones.",
     "rooms.room4.title": "Habitació Garden View",
     "rooms.room4.text": "Accés directe al jardí, llit doble i una atmosfera de calma absoluta.",
+    "gallery.label": "Moments Palmito",
+    "gallery.title": "La bellesa<br /><em>en cada racó</em>",
     "services.label": "Experiència Palmito",
     "services.title": "Tot el que<br /><em>necessites per brillar</em>",
     "services.lead":
@@ -334,7 +341,11 @@ const i18n = {
     "contact.form.message": "Missatge",
     "contact.form.message_placeholder": "Explica'ns què necessites...",
     "contact.form.submit": "Enviar consulta",
-    "contact.form.privacy": "He llegit i accepto la <a href='#'>política de privacitat</a>.",
+    "contact.form.privacy": "He llegit i accepto la <a href='privacitat.html' target='_blank'>política de privacitat</a>.",
+    "cta.label": "T'esperem",
+    "cta.title": "Preparat per viure la calma?",
+    "cta.text": "Descobreix un entorn únic on cada detall està pensat per a tu. Reserva ara i comença a crear records inoblidables.",
+    "cta.btn": "Reserva la teva estada",
     "footer.text": "On l'exclusivitat troba la seva essència natural. La teva llar lluny de casa, al cor de la Garrotxa.",
     "footer.copy": "© 2026 Palmito House. Tots els drets reservats.",
     "footer.design": "Dissenyat per Vora Studio",
@@ -352,6 +363,11 @@ const i18n = {
     "hero.label": "Casa rural exclusiva",
     "hero.description":
       "Escápate. Respira. Desconecta de verdad. Una casa exclusiva entre montaña, naturaleza y silencio, a pocos minutos de Girona y la Costa Brava.",
+    "hero.line1": "Escápate.",
+    "hero.line2": "Respira.",
+    "hero.line3": "Desconecta de verdad.",
+    "hero.line4": "Una casa exclusiva entre montaña, naturaleza y silencio,",
+    "hero.line5": "a pocos minutos de Girona y la Costa Brava.",
     "hero.cta_link": "Reserva tu estancia",
     "about.label": "Sobre la casa",
     "about.title": "Un refugio privado<br /><em>en plena naturaleza</em>",
@@ -380,6 +396,8 @@ const i18n = {
     "rooms.room3.text": "Dos ambientes conectados, ideal para familias con niños. Capacidad para 4 personas.",
     "rooms.room4.title": "Habitación Garden View",
     "rooms.room4.text": "Acceso directo al jardín, cama doble y una atmósfera de calma absoluta.",
+    "gallery.label": "Momentos Palmito",
+    "gallery.title": "La belleza<br /><em>en cada rincón</em>",
     "services.label": "Experiencia Palmito",
     "services.title": "Todo lo que<br /><em>necesitas para brillar</em>",
     "services.lead":
@@ -481,7 +499,11 @@ const i18n = {
     "contact.form.message": "Mensaje",
     "contact.form.message_placeholder": "Cuéntanos qué necesitas...",
     "contact.form.submit": "Enviar consulta",
-    "contact.form.privacy": "He leído y acepto la <a href='#'>política de privacidad</a>.",
+    "contact.form.privacy": "He leído y acepto la <a href='privacitat.html' target='_blank'>política de privacidad</a>.",
+    "cta.label": "Te esperamos",
+    "cta.title": "¿Preparado para vivir la calma?",
+    "cta.text": "Descubre un entorno único donde cada detalle está pensado para ti. Reserva ahora y empieza a crear recuerdos inolvidables.",
+    "cta.btn": "Reserva tu estancia",
     "footer.text": "Donde la exclusividad encuentra su esencia natural. Tu hogar lejos de casa, en el corazón de la Garrotxa.",
     "footer.copy": "© 2026 Palmito House. Todos los derechos reservados.",
     "footer.design": "Diseñado por Vora Studio",
@@ -499,6 +521,11 @@ const i18n = {
     "hero.label": "Exclusive Rural Retreat",
     "hero.description":
       "More than a stay, a total immersion in calm. Enjoy the ultimate exclusivity in an environment where time stops and personalized service is our priority.",
+    "hero.line1": "Escape.",
+    "hero.line2": "Breathe.",
+    "hero.line3": "Disconnect for real.",
+    "hero.line4": "An exclusive house between mountain, nature and silence,",
+    "hero.line5": "just minutes from Girona and the Costa Brava.",
     "hero.cta_link": "Start your journey",
     "about.label": "About the house",
     "about.title": "A private retreat<br /><em>in the heart of nature</em>",
@@ -527,6 +554,8 @@ const i18n = {
     "rooms.room3.text": "Two connected spaces, ideal for families with children. Capacity for 4 people.",
     "rooms.room4.title": "Garden View Room",
     "rooms.room4.text": "Direct garden access, double bed and an atmosphere of absolute calm.",
+    "gallery.label": "Palmito Moments",
+    "gallery.title": "Beauty<br /><em>in every corner</em>",
     "services.label": "The Palmito Experience",
     "services.title": "Everything you<br /><em>need to shine</em>",
     "services.lead":
@@ -627,7 +656,11 @@ const i18n = {
     "contact.form.message": "Message",
     "contact.form.message_placeholder": "Tell us what you need...",
     "contact.form.submit": "Send inquiry",
-    "contact.form.privacy": "I have read and accept the <a href='#'>privacy policy</a>.",
+    "contact.form.privacy": "I have read and accept the <a href='privacitat.html' target='_blank'>privacy policy</a>.",
+    "cta.label": "We're waiting for you",
+    "cta.title": "Ready to experience the calm?",
+    "cta.text": "Discover a unique environment where every detail is designed for you. Book now and start creating unforgettable memories.",
+    "cta.btn": "Book your stay",
     "footer.text": "Where exclusivity meets its natural essence. Your home away from home, in the heart of Garrotxa.",
     "footer.copy": "© 2026 Palmito House. All rights reserved.",
     "footer.design": "Designed by Vora Studio",
@@ -1305,49 +1338,50 @@ if (galleryModal) {
 
   // TOTS els fitxers de img/galeria/ (excepte subcarpetes)
   const ALL_GALLERY_IMAGES = [
-    { src: "img/galeria/0036ccc2-a0ad-436b-8efb-9521634ef21d.avif", alt: "Palmito House" },
-    { src: "img/galeria/06b22924-43b7-4a8d-8d9f-80738b76a86f.avif", alt: "Palmito House" },
-    { src: "img/galeria/0ba5eaf6-94c3-42c8-b4be-4e5a5ee1430e.avif", alt: "Palmito House" },
-    { src: "img/galeria/0e4430ab-cff0-4787-a6a1-1f5e384df69f.avif", alt: "Palmito House" },
-    { src: "img/galeria/202bd6e9-066f-4f8a-994d-7e945718fc3b.avif", alt: "Palmito House" },
-    { src: "img/galeria/230ac790-c6bf-4fd0-9839-e8d049a7ed58.avif", alt: "Palmito House" },
-    { src: "img/galeria/267aa409-cd69-451f-bf13-adc63659467e.jpeg", alt: "Palmito House" },
-    { src: "img/galeria/2853db95-9534-4062-a254-28f2b24020b5.avif", alt: "Palmito House" },
-    { src: "img/galeria/2add523d-50a5-422a-ae3e-dbf6f1f97f13.avif", alt: "Palmito House" },
-    { src: "img/galeria/2cc9cc6b-f0ce-4178-bf32-4ef16f3b5d14.avif", alt: "Palmito House" },
-    { src: "img/galeria/3d0cbdb2-1c32-442a-a4a9-e8706aefd147.avif", alt: "Palmito House" },
-    { src: "img/galeria/49b70f2e-d377-41a0-b28f-efd53b934a92.avif", alt: "Palmito House" },
-    { src: "img/galeria/4a68ba42-f400-42c7-a93a-74d3071f664b.avif", alt: "Palmito House" },
-    { src: "img/galeria/4d833e5b-ea02-4be0-bba5-93b497019880.avif", alt: "Palmito House" },
-    { src: "img/galeria/500073f0-8698-43f0-b467-c1cab2540188.avif", alt: "Palmito House" },
-    { src: "img/galeria/5a5e62f1-13c3-4be4-b29b-d7bad09a240d.avif", alt: "Palmito House" },
-    { src: "img/galeria/631b826a-c772-43e5-9698-52954d6e258b.avif", alt: "Palmito House" },
-    { src: "img/galeria/81c8fe22-3f7f-4730-aa19-676f4954c5aa.avif", alt: "Palmito House" },
-    { src: "img/galeria/82ae7202-df86-42b2-a562-0ad6beae2fc0.avif", alt: "Palmito House" },
-    { src: "img/galeria/8725d122-58d0-44bb-a55f-9f661a56b511.avif", alt: "Palmito House" },
-    { src: "img/galeria/95db20cf-2a26-479f-b286-5bc36968072f.avif", alt: "Palmito House" },
-    { src: "img/galeria/988d48be-f6b9-4704-9c43-2bc1e61e7a59.avif", alt: "Palmito House" },
-    { src: "img/galeria/9c220dea-e661-4ba3-93de-d1d52f275e28.avif", alt: "Palmito House" },
-    { src: "img/galeria/billar.avif", alt: "Sala de billar" },
-    { src: "img/galeria/ccb89646-2098-4e72-a6b6-ef42315e6e47.avif", alt: "Palmito House" },
-    { src: "img/galeria/cd6sofa.avif", alt: "Zona d'estar amb sofà" },
-    { src: "img/galeria/coberta.avif", alt: "Terrassa amb vistes" },
-    { src: "img/galeria/cuin.avif", alt: "Cuina equipada" },
-    { src: "img/galeria/d5771a1d-a121-4693-b840-a0bff53eec75.avif", alt: "Palmito House" },
-    { src: "img/galeria/e90f0a9e-bc07-4605-9857-eb9dc8ae28cb.avif", alt: "Palmito House" },
-    { src: "img/galeria/exterior.avif", alt: "Exterior de la casa" },
-    { src: "img/galeria/f44df969-feec-4cb1-9fa3-841a58788e29.avif", alt: "Palmito House" },
-    { src: "img/galeria/f6d05a9e-cd16-4e7d-903a-72a0dcae1edb.avif", alt: "Palmito House" },
-    { src: "img/galeria/f6dee1a6-1d2a-4f37-ac10-7401256a5c99.avif", alt: "Palmito House" },
-    { src: "img/galeria/f9f3ecb0-7aab-4aea-8d95-6c25b0cceee8.avif", alt: "Palmito House" },
-    { src: "img/galeria/pisci3.avif", alt: "Piscina i jardí" },
-    { src: "img/galeria/pisci4.avif", alt: "Piscina" },
-    { src: "img/galeria/piscina.avif", alt: "Piscina exterior" },
-    { src: "img/galeria/piscina2.avif", alt: "Piscina amb vistes" },
-    { src: "img/galeria/piscina3.avif", alt: "Piscina exterior" },
-    { src: "img/galeria/salo.avif", alt: "Saló d'estar principal" },
-    { src: "img/galeria/salo2.avif", alt: "Saló secundari" },
-    { src: "img/galeria/salo3.avif", alt: "Saló principal" },
+    { src: "img/galeria/119953966.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953967.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953968.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953969.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953970.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953972.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953973.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953974.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953975.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953976.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953977.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953978.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953979.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953980.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953981.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953982.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953983.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953985.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953986.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953987.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953988.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953989.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953990.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953991.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953992.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953993.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953994.webp", alt: "Catalunya" },
+    { src: "img/galeria/119953998.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954000.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954001.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954002.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954003.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954005.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954007.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954009.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954010.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954011.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954014.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954015.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954017.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954019.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954020.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954021.webp", alt: "Catalunya" },
+    { src: "img/galeria/119954022.webp", alt: "Catalunya" },
   ];
 
   const gmSources = ALL_GALLERY_IMAGES;
@@ -1409,11 +1443,9 @@ if (galleryModal) {
   }
 
   function navigateGallery(direction) {
-    gsap.to(gmWrapper, {
+    gsap.to(gmImg, {
       autoAlpha: 0,
-      scale: 0.85,
-      y: -15,
-      duration: 0.2,
+      duration: 0.3,
       ease: "power2.in",
       onComplete: () => {
         gmIndex = (gmIndex + direction + gmSources.length) % gmSources.length;
@@ -1421,8 +1453,8 @@ if (galleryModal) {
         gmImg.alt = gmSources[gmIndex].alt;
         updateGalleryCounter();
 
-        gsap.set(gmWrapper, { autoAlpha: 0, scale: 0.85, y: 20 });
-        gsap.to(gmWrapper, { autoAlpha: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" });
+        gsap.set(gmImg, { autoAlpha: 0 });
+        gsap.to(gmImg, { autoAlpha: 1, duration: 3, ease: "power2.out" });
       },
     });
   }
@@ -1861,14 +1893,21 @@ function initContactForm() {
   const contactForm = document.getElementById("contact-form");
   if (!contactForm) return;
 
-  // Inserir CSRF token
+  // CSRF token — obtenir del servidor
   const csrfInput = document.getElementById("csrf_token");
   if (csrfInput) {
-    // Token basat en data (stateless, validat al PHP)
-    const csrfSecret = "dev_secret_12345";
-    const today = new Date().toISOString().split("T")[0];
-    // Simulem HMAC (al PHP es fa amb hash_hmac real)
-    csrfInput.value = btoa(today + ":" + csrfSecret);
+    fetch("php/csrf.php")
+      .then((r) => r.json())
+      .then((d) => { if (d.token) csrfInput.value = d.token; })
+      .catch(() => {}); // Si falla, el PHP ho rebutjarà amb CSRF invàlid
+  }
+
+  // Sanititzar telèfon (treure caràcters no permesos)
+  const phoneInput = document.getElementById("phone");
+  if (phoneInput) {
+    phoneInput.addEventListener("input", () => {
+      phoneInput.value = phoneInput.value.replace(/[^+\d\s\-]/g, "");
+    });
   }
 
   contactForm.addEventListener("submit", (e) => {
@@ -1924,7 +1963,7 @@ function initContactForm() {
        ===================================================================== */
     if (typeof grecaptcha !== "undefined") {
       grecaptcha.ready(() => {
-        const siteKey = ""; // ← Insertar aquí la Site Key de reCAPTCHA v3
+        const siteKey = "6LcUQfUsAAAAAGVzW0flx_A2AbuIA2mQfRu9QGdU";
         grecaptcha.execute(siteKey, { action: "submit" }).then((token) => {
           enviarFormulari(token, originalText, btn);
         });
@@ -1942,32 +1981,23 @@ async function enviarFormulari(token, originalText, btn) {
 
   const data = new FormData(document.getElementById("contact-form"));
 
-  /* ====================================================================
-     ENVIAMENT AJAX A PHP (COMENTAT — Activar quan el PHP estigui online)
-     // try {
-     //   const response = await fetch("php/contacte.php", {
-     //     method: "POST",
-     //     body: data,
-     //     headers: { Accept: "application/json" },
-     //   });
-     //   const result = await response.json();
-     //
-     //   if (response.ok && result.ok) {
-     //     mostrarToast(result.message || "Missatge enviat correctament!", "success");
-     //     document.getElementById("contact-form").reset();
-     //   } else {
-     //     mostrarToast(result.error || "Hi ha hagut un problema.", "error");
-     //   }
-     // } catch (error) {
-     //   mostrarToast("Error de connexió. Intenta-ho més tard.", "error");
-     // }
-     ==================================================================== */
+  try {
+    const response = await fetch("php/contacte.php", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+    const result = await response.json();
 
-  // === MOCK (mentre el PHP no està actiu) ===
-  await new Promise((r) => setTimeout(r, 1200));
-  mostrarToast("Missatge rebut! Et respondrem en breu.", "success");
-  document.getElementById("contact-form").reset();
-  // === FI MOCK ===
+    if (response.ok && result.ok) {
+      mostrarToast(result.message || "Missatge enviat correctament!", "success");
+      document.getElementById("contact-form").reset();
+    } else {
+      mostrarToast(result.error || "Hi ha hagut un problema.", "error");
+    }
+  } catch (error) {
+    mostrarToast("Error de connexió. Intenta-ho més tard.", "error");
+  }
 
   // Restaurar UI
   btn.textContent = originalText;
@@ -1980,20 +2010,22 @@ function mostrarToast(mensaje, tipo) {
   const toast = document.getElementById("toast-container");
   if (!toast) return;
 
-  toast.textContent = mensaje;
+  const msgEl = toast.querySelector(".toast__message");
+  if (msgEl) msgEl.textContent = mensaje;
+
   toast.className = "toast-visible toast-" + tipo;
 
-  const tlToast = gsap.timeline();
+  // Matar cualquier timeline anterior
+  if (toast._tl) toast._tl.kill();
 
-  tlToast.fromTo(toast, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }).to(toast, {
-    opacity: 0,
-    y: -10,
-    delay: 4,
-    duration: 0.4,
-    onComplete: () => {
-      toast.className = "toast-hidden";
-    },
-  });
+  const tlToast = gsap.timeline({ paused: true });
+
+  tlToast
+    .fromTo(toast, { y: 24, opacity: 0, scale: 0.96 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" })
+    .to(toast, { opacity: 0, y: -8, scale: 0.96, delay: 4, duration: 0.35, ease: "power2.in", onComplete: () => { toast.className = "toast-hidden"; } });
+
+  tlToast.play();
+  toast._tl = tlToast;
 }
 
 if (document.readyState === "loading") {

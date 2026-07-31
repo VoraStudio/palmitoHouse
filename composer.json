@@ -1,15 +1,13 @@
 {
-    "name": "palmitohouse/website",
-    "description": "Palmito House Website",
-    "type": "project",
-    "require": {
-        "phpmailer/phpmailer": "6.9",
-        "vlucas/phpdotenv": "5.6"
-    },
-    "authors": [
-        {
-            "name": "Vora Studio",
-            "email": "info@vorastudio.cat"
-        }
-    ]
+  "name": "vorastudio/palmito-house",
+  "description": "Palmito House — formulari de contacte",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "phpmailer/phpmailer": "^6.9",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
 }

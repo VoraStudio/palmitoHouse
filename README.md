@@ -32,36 +32,46 @@ palmitoHouse/
 ## Funcionalitats
 
 ### Hero animat
+
 - Títol "Palmito" i "House" entren des dels costats oposats.
 - Imatge central es desplega amb clip-path.
 - Text inferior "Escapa't. Respira. Desconnecta de veritat." es revela línia a línia.
 
 ### Secció "La casa"
+
 - Slider d'imatges amb transició lliscant i lleuger efecte parallax.
 - Descripció de la propietat i enllaç a Airbnb.
 
 ### Estadístiques
+
 - Comptadors animats amb scroll.
 
 ### Habitacions
+
 - 4 targetes desplegables amb galeria d'imatges, descripció i enllaç a Airbnb.
 
 ### Galeria
+
 - Graella d'imatges responsive amb lightbox modal. Navegació amb teclat (fletxes, Escape).
 
 ### Serveis
+
 - 12 targetes amb iconografia dels serveis de la casa.
 
 ### Activitats
+
 - Targetes amb imatge de fons, overlay informatiu i galeria d'imatges associada.
 
 ### Entorn
+
 - Targetes de destinacions properes (Girona, Barcelona, Figueres, Pirineus, Garrotxa, Costa Brava) amb galeria fotogràfica.
 
 ### Ressenyes
+
 - Carrusel de testimonis reals d'hostes. Disponible en català, castellà i anglès.
 
 ### Formulari de contacte
+
 - Validació al frontend amb JavaScript.
 - Enviament asíncron amb PHP + PHPMailer (cal configurar, veure secció corresponent).
 - reCAPTCHA v3 per protecció anti-bots.
@@ -155,6 +165,7 @@ composer install
 ```
 
 **Requisits del servidor:**
+
 - PHP ≥ 8.0
 - Extensió cURL
 - Extensió mbstring
